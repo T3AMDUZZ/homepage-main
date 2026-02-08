@@ -1,0 +1,525 @@
+/* AI Quote Page - 한국형 신뢰감 있는 디자인 */
+.ai-quote-page {
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+}
+
+.quote-section {
+  width: 100%;
+  padding: var(--spacing-3xl) 0;
+}
+
+.quote-section .container {
+  max-width: 640px;
+}
+
+/* Progress */
+.quote-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--color-accent-gradient);
+  transition: width var(--transition-base);
+}
+
+.progress-text {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Question */
+.quote-question {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.quote-question h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 1.85rem);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.02em;
+}
+
+.quote-question p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+/* Options - 단일 컬럼 (한 줄씩) */
+.quote-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.quote-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.quote-option:hover {
+  border-color: var(--color-border-hover);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.quote-option.selected {
+  border-color: var(--color-accent-primary);
+  background: rgba(0, 229, 255, 0.05);
+}
+
+.option-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.option-label {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.option-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.option-check {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.quote-option.selected .option-check {
+  background: var(--color-accent-gradient);
+  border-color: transparent;
+  color: var(--color-bg-primary);
+}
+
+/* Text Input Section */
+.text-input-section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.feature-input {
+  width: 100%;
+  padding: var(--spacing-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  resize: vertical;
+  transition: border-color var(--transition-fast);
+}
+
+.feature-input:focus {
+  outline: none;
+  border-color: var(--color-accent-primary);
+}
+
+.feature-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* 추출된 키워드 */
+.extracted-keywords {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: rgba(0, 229, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: var(--radius-md);
+}
+
+.extracted-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-accent-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.extracted-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.extracted-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(0, 229, 255, 0.1);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent-primary);
+}
+
+/* Navigation */
+.quote-nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.quote-nav .btn {
+  min-width: 140px;
+  font-weight: 700;
+}
+
+.quote-nav .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   AI 분석중 화면
+============================================ */
+.analyzing-section {
+  width: 100%;
+  padding: var(--spacing-3xl) 0;
+}
+
+.analyzing-content {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.ai-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto var(--spacing-xl);
+  color: var(--color-accent-primary);
+  animation: aiPulse 2s ease-in-out infinite;
+}
+
+.ai-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.rotating-circle {
+  transform-origin: center;
+  animation: rotateCircle 3s linear infinite;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes aiPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.analyzing-text h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.02em;
+}
+
+.analyzing-text p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.analyzing-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.analyzing-dots span {
+  width: 10px;
+  height: 10px;
+  background: var(--color-accent-primary);
+  border-radius: 50%;
+  animation: dotBounce 1.4s ease-in-out infinite;
+}
+
+.analyzing-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.analyzing-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.analyzing-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dotBounce {
+  0%, 80%, 100% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   결과 페이지
+============================================ */
+.quote-result {
+  width: 100%;
+  padding: var(--spacing-3xl) 0;
+}
+
+.result-content {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.result-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--color-accent-gradient);
+  color: var(--color-bg-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--spacing-md);
+}
+
+.result-header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* 선택된 기능 목록 카드 */
+.features-list-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.features-list-card h3 {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.features-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-lg);
+}
+
+.feature-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.timeline-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.timeline-label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.timeline-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+/* 최종 견적 카드 */
+.final-estimate-card {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.08) 0%, rgba(37, 99, 235, 0.08) 100%);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.estimate-label {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 0.05em;
+}
+
+.estimate-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.price-min,
+.price-max {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 800;
+  background: var(--color-accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.price-separator {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.estimate-note {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* 결과 액션 버튼 */
+.result-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.result-actions .btn {
+  width: 100%;
+  padding: var(--spacing-md);
+  font-weight: 700;
+}
+
+/* ============================================
+   반응형
+============================================ */
+@media (max-width: 768px) {
+  .ai-quote-page {
+    padding-top: 80px;
+    align-items: flex-start;
+  }
+
+  .quote-section .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .quote-nav {
+    flex-direction: column;
+  }
+
+  .quote-nav .btn {
+    width: 100%;
+  }
+
+  .analyzing-content {
+    padding: 0 var(--spacing-md);
+  }
+
+  .ai-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .features-list-card,
+  .final-estimate-card {
+    padding: var(--spacing-lg);
+  }
+
+  .estimate-price {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .price-separator {
+    display: none;
+  }
+
+  .price-max::before {
+    content: '~ ';
+  }
+}

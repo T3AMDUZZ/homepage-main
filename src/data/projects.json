@@ -1,0 +1,391 @@
+[
+  {
+    "id": "001",
+    "title": "대규모 온라인 쇼핑몰",
+    "subtitle": "일 100만 트래픽을 처리하는 이커머스 플랫폼 구축기",
+    "client": "국내 대형 유통사",
+    "year": "2024",
+    "duration": "6개월",
+    "thumbnail": "/assets/projects/ecommerce-thumb.jpg",
+    "heroImage": "/assets/projects/ecommerce-hero.jpg",
+    "tags": ["React", "Node.js", "AWS", "마이크로서비스"],
+    "content": [
+      {
+        "type": "intro",
+        "text": "대형 유통사와 함께 기존 쇼핑몰의 전면 재구축 프로젝트를 진행했습니다. 기존 시스템은 느린 속도와 잦은 오류로 매출 손실이 발생하고 있었고, 대규모 프로모션 시 서버 다운이 빈번했습니다."
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 배경"
+      },
+      {
+        "type": "paragraph",
+        "text": "클라이언트는 매년 성장하는 온라인 매출에 비해 기존 쇼핑몰 인프라가 한계에 도달했습니다. 특히 연말 대규모 프로모션 기간에는 서버 과부하로 인한 장애가 반복되어 고객 이탈과 매출 손실이 심각한 상황이었습니다."
+      },
+      {
+        "type": "image",
+        "src": "/assets/projects/ecommerce-01.jpg",
+        "caption": "기존 시스템 아키텍처 분석 및 문제점 도출"
+      },
+      {
+        "type": "heading",
+        "text": "우리가 해결한 방법"
+      },
+      {
+        "type": "paragraph",
+        "text": "마이크로서비스 아키텍처를 도입하여 각 기능을 독립적인 서비스로 분리했습니다. 이를 통해 특정 기능에 트래픽이 집중되어도 다른 서비스에 영향을 주지 않도록 설계했습니다."
+      },
+      {
+        "type": "list",
+        "items": [
+          "실시간 재고 관리 시스템으로 품절 상품 자동 숨김",
+          "개인화 추천 엔진으로 고객별 맞춤 상품 노출",
+          "통합 결제 시스템으로 다양한 결제 수단 지원",
+          "관리자 대시보드로 실시간 현황 모니터링"
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/assets/projects/ecommerce-02.jpg",
+        "caption": "새롭게 설계된 마이크로서비스 아키텍처"
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 성과"
+      },
+      {
+        "type": "results",
+        "items": [
+          { "label": "페이지 로딩 속도", "value": "3배 향상" },
+          { "label": "서버 비용", "value": "40% 절감" },
+          { "label": "매출 전환율", "value": "25% 상승" }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "덕분에 대규모 프로모션에서도 안정적으로 운영할 수 있게 되었습니다. 이제는 트래픽 걱정 없이 마케팅에만 집중할 수 있어요.",
+        "author": "클라이언트 담당자"
+      }
+    ]
+  },
+  {
+    "id": "002",
+    "title": "간편결제 금융 앱",
+    "subtitle": "누구나 쉽게 사용하는 통합 금융 서비스 앱 개발",
+    "client": "금융 스타트업",
+    "year": "2024",
+    "duration": "4개월",
+    "thumbnail": "/assets/projects/fintech-thumb.jpg",
+    "heroImage": "/assets/projects/fintech-hero.jpg",
+    "tags": ["Flutter", "Firebase", "Stripe", "금융보안"],
+    "content": [
+      {
+        "type": "intro",
+        "text": "복잡한 금융 서비스를 누구나 쉽게 사용할 수 있도록 직관적인 UI와 간편한 사용 흐름을 가진 금융 앱을 개발했습니다."
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 배경"
+      },
+      {
+        "type": "paragraph",
+        "text": "기존 금융 앱들은 기능은 많지만 사용하기 어렵다는 피드백이 많았습니다. 클라이언트는 '금융을 쉽게'라는 슬로건 아래 누구나 직관적으로 사용할 수 있는 앱을 원했습니다."
+      },
+      {
+        "type": "image",
+        "src": "/assets/projects/fintech-01.jpg",
+        "caption": "사용자 리서치를 통한 UI/UX 설계 과정"
+      },
+      {
+        "type": "heading",
+        "text": "설계 원칙"
+      },
+      {
+        "type": "paragraph",
+        "text": "금융 보안 규정을 100% 준수하면서도 사용자 경험을 최우선으로 고려했습니다. 복잡한 인증 절차를 생체 인증으로 간소화하고, 자주 사용하는 기능은 한 번의 터치로 접근할 수 있도록 설계했습니다."
+      },
+      {
+        "type": "list",
+        "items": [
+          "간편 결제 - 3초 안에 결제 완료",
+          "자산 관리 대시보드 - 한눈에 보는 내 자산",
+          "실시간 알림 - 모든 거래 내역 즉시 확인",
+          "생체 인증 로그인 - 빠르고 안전한 접근"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 성과"
+      },
+      {
+        "type": "results",
+        "items": [
+          { "label": "일일 사용자", "value": "5만명 달성" },
+          { "label": "앱스토어 순위", "value": "금융 TOP 10" },
+          { "label": "고객 만족도", "value": "4.8/5점" }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "사용자 피드백이 정말 좋아요. 앱 출시 후 고객 문의가 크게 줄었습니다.",
+        "author": "클라이언트 대표"
+      }
+    ]
+  },
+  {
+    "id": "003",
+    "title": "AI 고객 상담 시스템",
+    "subtitle": "상담원 업무 부담을 60% 줄인 지능형 챗봇 구축",
+    "client": "대기업 고객센터",
+    "year": "2023",
+    "duration": "5개월",
+    "thumbnail": "/assets/projects/ai-chat-thumb.jpg",
+    "heroImage": "/assets/projects/ai-chat-hero.jpg",
+    "tags": ["Python", "TensorFlow", "NLP", "자연어처리"],
+    "content": [
+      {
+        "type": "intro",
+        "text": "반복적인 문의로 상담원 업무 부담이 과중했던 고객센터에 AI 기반 자동 응답 시스템을 도입하여 효율성을 크게 개선했습니다."
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 배경"
+      },
+      {
+        "type": "paragraph",
+        "text": "하루 수천 건의 문의 중 70% 이상이 반복적인 질문이었습니다. 상담원들은 같은 답변을 반복하느라 정작 복잡한 문의에 집중하지 못하는 상황이었습니다."
+      },
+      {
+        "type": "image",
+        "src": "/assets/projects/ai-chat-01.jpg",
+        "caption": "기존 상담 프로세스 분석 및 AI 도입 전략"
+      },
+      {
+        "type": "heading",
+        "text": "AI 솔루션 설계"
+      },
+      {
+        "type": "paragraph",
+        "text": "자연어 처리(NLP) 기술을 활용하여 고객의 의도를 정확히 파악하고, 적절한 답변을 제공하는 시스템을 구축했습니다. 단순히 키워드 매칭이 아닌 문맥을 이해하는 AI로 상담 품질을 유지했습니다."
+      },
+      {
+        "type": "list",
+        "items": [
+          "자연어 이해 엔진으로 고객 의도 파악",
+          "자동 답변 시스템으로 즉시 응답",
+          "상담 이력 분석으로 패턴 학습",
+          "실시간 모니터링으로 품질 관리"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 성과"
+      },
+      {
+        "type": "results",
+        "items": [
+          { "label": "응답 시간", "value": "85% 단축" },
+          { "label": "상담원 업무량", "value": "60% 감소" },
+          { "label": "고객 만족도", "value": "30% 향상" }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "AI 도입 후 상담 품질이 오히려 좋아졌다는 피드백을 많이 받고 있습니다.",
+        "author": "고객센터 팀장"
+      }
+    ]
+  },
+  {
+    "id": "004",
+    "title": "환자 데이터 관리 시스템",
+    "subtitle": "여러 병원의 환자 데이터를 안전하게 통합 관리",
+    "client": "의료기관 컨소시엄",
+    "year": "2023",
+    "duration": "3개월",
+    "thumbnail": "/assets/projects/healthcare-thumb.jpg",
+    "heroImage": "/assets/projects/healthcare-hero.jpg",
+    "tags": ["보안", "실시간처리", "의료데이터", "대시보드"],
+    "content": [
+      {
+        "type": "intro",
+        "text": "여러 병원의 환자 데이터를 안전하게 통합하고 실시간으로 조회할 수 있는 시스템을 구축하여 의료진의 업무 효율을 크게 개선했습니다."
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 배경"
+      },
+      {
+        "type": "paragraph",
+        "text": "환자가 여러 병원을 방문할 때마다 같은 검사를 반복하거나, 이전 진료 기록을 확인하지 못해 진료에 차질이 생기는 문제가 있었습니다. 민감한 의료 데이터를 안전하게 통합 관리할 시스템이 필요했습니다."
+      },
+      {
+        "type": "image",
+        "src": "/assets/projects/healthcare-01.jpg",
+        "caption": "보안이 강화된 데이터 통합 아키텍처"
+      },
+      {
+        "type": "heading",
+        "text": "보안 중심 설계"
+      },
+      {
+        "type": "paragraph",
+        "text": "의료 보안 규정을 100% 준수하면서 실시간 데이터 처리가 가능하도록 암호화 파이프라인과 실시간 스트리밍 아키텍처를 도입했습니다."
+      },
+      {
+        "type": "list",
+        "items": [
+          "통합 환자 데이터 조회로 진료 연속성 확보",
+          "실시간 모니터링 대시보드로 현황 파악",
+          "암호화 데이터 처리로 보안 강화",
+          "세밀한 권한 관리로 접근 통제"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 성과"
+      },
+      {
+        "type": "results",
+        "items": [
+          { "label": "데이터 조회 속도", "value": "5배 향상" },
+          { "label": "의료 보안 규정", "value": "100% 준수" },
+          { "label": "의료진 업무 효율", "value": "40% 개선" }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "환자 정보를 빠르고 안전하게 확인할 수 있어 진료에 집중할 수 있게 되었습니다.",
+        "author": "병원 의료정보팀장"
+      }
+    ]
+  },
+  {
+    "id": "005",
+    "title": "실시간 커뮤니티 앱",
+    "subtitle": "10만 동시 접속을 처리하는 소셜 플랫폼",
+    "client": "스타트업",
+    "year": "2023",
+    "duration": "4개월",
+    "thumbnail": "/assets/projects/social-thumb.jpg",
+    "heroImage": "/assets/projects/social-hero.jpg",
+    "tags": ["WebSocket", "Redis", "실시간처리", "스케일링"],
+    "content": [
+      {
+        "type": "intro",
+        "text": "수만 명이 동시에 접속해도 끊김 없이 실시간 채팅과 미디어 공유가 가능한 소셜 커뮤니티 플랫폼을 개발했습니다."
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 배경"
+      },
+      {
+        "type": "paragraph",
+        "text": "클라이언트는 급성장하는 사용자 수에 비해 기존 인프라가 버티지 못하는 문제를 겪고 있었습니다. 특히 이벤트 시간대에 접속자가 몰리면 앱이 멈추는 현상이 반복되었습니다."
+      },
+      {
+        "type": "image",
+        "src": "/assets/projects/social-01.jpg",
+        "caption": "대규모 트래픽 처리를 위한 시스템 설계"
+      },
+      {
+        "type": "heading",
+        "text": "실시간 처리 아키텍처"
+      },
+      {
+        "type": "paragraph",
+        "text": "WebSocket과 Redis를 활용한 실시간 메시징 시스템을 구축하고, 자동 스케일링으로 트래픽 급증에 대응했습니다."
+      },
+      {
+        "type": "list",
+        "items": [
+          "실시간 채팅으로 즉각적인 소통",
+          "미디어 공유로 풍부한 콘텐츠",
+          "그룹 기능으로 커뮤니티 형성",
+          "푸시 알림으로 활성화 유지"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 성과"
+      },
+      {
+        "type": "results",
+        "items": [
+          { "label": "동시 접속 처리", "value": "10만명" },
+          { "label": "메시지 전송 지연", "value": "최소화" },
+          { "label": "월간 사용자", "value": "30만 달성" }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "사용자가 급증해도 서비스가 안정적이라 마케팅에만 집중할 수 있어요.",
+        "author": "클라이언트 CTO"
+      }
+    ]
+  },
+  {
+    "id": "006",
+    "title": "제품 품질 자동 검사",
+    "subtitle": "AI로 불량률 99.7% 탐지, 연간 5억 절감",
+    "client": "제조업체",
+    "year": "2023",
+    "duration": "6개월",
+    "thumbnail": "/assets/projects/factory-thumb.jpg",
+    "heroImage": "/assets/projects/factory-hero.jpg",
+    "tags": ["AI", "컴퓨터비전", "딥러닝", "엣지컴퓨팅"],
+    "content": [
+      {
+        "type": "intro",
+        "text": "수작업 품질 검사로 인한 불량률과 인건비 부담을 해결하기 위해 AI가 제품 불량을 자동으로 탐지하는 스마트팩토리 시스템을 구축했습니다."
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 배경"
+      },
+      {
+        "type": "paragraph",
+        "text": "기존 수작업 검사는 작업자의 피로도에 따라 품질이 들쭉날쭉했고, 미세한 결함은 놓치는 경우가 많았습니다. 또한 24시간 생산라인에 사람을 배치하는 비용도 부담이었습니다."
+      },
+      {
+        "type": "image",
+        "src": "/assets/projects/factory-01.jpg",
+        "caption": "AI 비전 검사 시스템 구축 현장"
+      },
+      {
+        "type": "heading",
+        "text": "AI 비전 시스템"
+      },
+      {
+        "type": "paragraph",
+        "text": "딥러닝 기반 이미지 분석 모델을 개발하고, 엣지 컴퓨팅을 도입하여 실시간으로 제품을 검사할 수 있도록 했습니다. 사람 눈으로 보기 어려운 미세 결함도 탐지합니다."
+      },
+      {
+        "type": "list",
+        "items": [
+          "AI 이미지 분석으로 미세 결함 탐지",
+          "실시간 불량 탐지로 즉시 대응",
+          "품질 리포트 자동 생성으로 관리 효율화",
+          "생산라인 연동으로 자동화 완성"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "프로젝트 성과"
+      },
+      {
+        "type": "results",
+        "items": [
+          { "label": "불량 탐지율", "value": "99.7%" },
+          { "label": "검사 시간", "value": "90% 단축" },
+          { "label": "연간 비용 절감", "value": "5억원" }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "불량률이 크게 줄어 고객 클레임이 거의 사라졌습니다.",
+        "author": "품질관리팀장"
+      }
+    ]
+  }
+]

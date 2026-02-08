@@ -1,0 +1,1022 @@
+/* ============================================
+   Process Page - Professional & Clean
+============================================ */
+
+/* Hero */
+.process-hero {
+  padding: 160px 0 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(0, 229, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: linear-gradient(180deg, black 0%, transparent 100%);
+}
+
+.process-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.process-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin: 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.process-hero p {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Section Styles */
+.section {
+  padding: 100px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--color-accent-primary);
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 229, 255, 0.015) 50%, transparent 100%);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 60px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-counter {
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.stat-value {
+  display: block;
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  background: var(--color-accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-top: 8px;
+}
+
+/* Process Timeline */
+.process-timeline {
+  padding: 100px 0;
+  position: relative;
+}
+
+.process-timeline .section-header {
+  margin-bottom: 48px;
+}
+
+/* Timeline Progress Bar */
+.timeline-progress {
+  margin-bottom: 48px;
+}
+
+.progress-track {
+  height: 2px;
+  background: var(--color-bg-tertiary);
+  border-radius: 1px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--color-accent-gradient);
+  transition: width 0.3s ease;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  transition: all 0.25s ease;
+}
+
+.progress-step.active {
+  background: var(--color-bg-primary);
+  border-color: var(--color-accent-primary);
+  color: var(--color-accent-primary);
+}
+
+/* Timeline Container */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Step Item */
+.step-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--step-index) * 0.06s);
+}
+
+.step-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Step Indicator */
+.step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.step-line {
+  position: absolute;
+  top: 48px;
+  width: 1px;
+  height: calc(100% + 16px);
+  background: var(--color-border);
+  overflow: hidden;
+}
+
+.step-line-fill {
+  width: 100%;
+  background: var(--color-accent-primary);
+  transition: height 0.5s ease;
+}
+
+.step-item:last-child .step-line {
+  display: none;
+}
+
+.step-dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.25s ease;
+}
+
+.step-item.active .step-dot {
+  border-color: var(--color-accent-primary);
+  background: var(--color-bg-primary);
+}
+
+.step-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  transition: color 0.25s ease;
+}
+
+.step-item.active .step-num {
+  color: var(--color-accent-primary);
+}
+
+/* Step Content */
+.step-content {
+  padding: 24px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  transition: all 0.25s ease;
+}
+
+.step-item.active .step-content {
+  border-color: var(--color-border-hover);
+}
+
+.step-item:hover .step-content {
+  border-color: var(--color-border-hover);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.step-content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.step-duration {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  background: var(--color-bg-tertiary);
+  border-radius: 100px;
+  color: var(--color-text-secondary);
+}
+
+.step-description {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Step Details List */
+.step-details-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+  list-style: none;
+}
+
+.step-details-list li {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  padding-left: 14px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  transition-delay: calc(var(--detail-index) * 0.04s + 0.15s);
+}
+
+.step-item.visible .step-details-list li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.step-details-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--color-accent-primary);
+  border-radius: 50%;
+}
+
+/* Billing Section */
+.billing {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 229, 255, 0.015) 50%, transparent 100%);
+  border-top: 1px solid var(--color-border);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.pricing-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--card-index) * 0.08s);
+}
+
+.pricing-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pricing-card:hover {
+  border-color: var(--color-border-hover);
+}
+
+.pricing-card.popular {
+  border-color: var(--color-accent-primary);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-accent-gradient);
+  color: var(--color-bg-primary);
+  padding: 4px 14px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.pricing-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.plan-description {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.plan-price {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.plan-price .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.plan-features li {
+  padding: 8px 0;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  padding-left: 16px;
+  position: relative;
+}
+
+.plan-features li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-text-muted);
+}
+
+.plan-btn {
+  width: 100%;
+}
+
+.pricing-card.popular .plan-btn {
+  background: var(--color-accent-gradient);
+  color: var(--color-bg-primary);
+  border: none;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--color-accent-gradient);
+  color: var(--color-bg-primary);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 229, 255, 0.25);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--color-border-hover);
+}
+
+/* Maintenance Section */
+.maintenance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.maintenance-card {
+  text-align: center;
+  padding: 32px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--card-index) * 0.08s);
+}
+
+.maintenance-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.maintenance-card:hover {
+  border-color: var(--color-border-hover);
+}
+
+.maintenance-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.maintenance-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-accent-primary);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.maintenance-card ul {
+  list-style: none;
+  text-align: left;
+}
+
+.maintenance-card li {
+  padding: 8px 0;
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  padding-left: 14px;
+  position: relative;
+}
+
+.maintenance-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--color-accent-primary);
+  border-radius: 50%;
+}
+
+/* FAQ Section */
+.faq {
+  background: linear-gradient(180deg, transparent 0%, rgba(37, 99, 235, 0.015) 50%, transparent 100%);
+}
+
+/* FAQ 컨테이너 - 사이드바 레이아웃 */
+.faq-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* 왼쪽 사이드바 */
+.faq-sidebar {
+  position: sticky;
+  top: 100px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* 사이드바 검색창 */
+.faq-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.faq-search-input {
+  width: 100%;
+  padding: 12px 36px 12px 36px;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+  transition: all 0.25s ease;
+}
+
+.faq-search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.faq-search-input:focus {
+  outline: none;
+  border-color: var(--color-accent-primary);
+  background: var(--color-bg-primary);
+}
+
+.search-clear {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: var(--color-bg-tertiary);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-clear:hover {
+  background: var(--color-text-muted);
+  color: var(--color-bg-primary);
+}
+
+/* 사이드바 메뉴 */
+.faq-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.faq-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.faq-menu-item:hover {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+}
+
+.faq-menu-item.active {
+  background: rgba(0, 229, 255, 0.1);
+  color: var(--color-accent-primary);
+}
+
+.faq-menu-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 24px;
+  background: var(--color-accent-primary);
+  border-radius: 0 2px 2px 0;
+}
+
+.menu-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.menu-text {
+  flex: 1;
+  font-weight: 500;
+}
+
+.menu-count {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  background: var(--color-bg-tertiary);
+  border-radius: 100px;
+  color: var(--color-text-muted);
+}
+
+.faq-menu-item.active .menu-count {
+  background: rgba(0, 229, 255, 0.15);
+  color: var(--color-accent-primary);
+}
+
+/* 오른쪽 FAQ 콘텐츠 */
+.faq-content {
+  min-height: 400px;
+}
+
+.faq-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-content-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.faq-search-result {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.search-result-count {
+  color: var(--color-accent-primary);
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+/* FAQ 검색 결과 없음 */
+.faq-no-result {
+  text-align: center;
+  padding: 64px 24px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+
+.no-result-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.faq-no-result h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--color-text-primary);
+}
+
+.faq-no-result p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* FAQ 리스트 */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--faq-index) * 0.03s);
+}
+
+.faq-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq-item:hover {
+  border-color: var(--color-border-hover);
+}
+
+.faq-item.open {
+  border-color: var(--color-accent-primary);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.faq-text {
+  flex: 1;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+.faq-icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.icon-line {
+  position: absolute;
+  background: var(--color-text-muted);
+  transition: all 0.25s ease;
+}
+
+.icon-line.horizontal {
+  width: 10px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-line.vertical {
+  width: 1px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-item.open .icon-line.vertical {
+  transform: translate(-50%, -50%) rotate(90deg);
+  opacity: 0;
+}
+
+.faq-item.open .icon-line {
+  background: var(--color-accent-primary);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.open .faq-answer {
+  max-height: 400px;
+}
+
+.faq-answer p {
+  padding: 0 20px 18px;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Process CTA */
+.process-cta {
+  padding: 100px 0;
+}
+
+.process-cta .cta-card {
+  text-align: center;
+  padding: 64px 48px;
+  background: rgba(0, 229, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+}
+
+.process-cta h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.process-cta p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid,
+  .maintenance-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .faq-container {
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+  }
+
+  .faq-sidebar {
+    padding: 16px;
+  }
+
+  .faq-menu-item {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .menu-icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-hero {
+    padding: 140px 0 80px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .timeline-progress {
+    display: none;
+  }
+
+  .step-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .step-indicator {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .step-line {
+    display: none;
+  }
+
+  .step-dot {
+    width: 40px;
+    height: 40px;
+  }
+
+  .step-details-list {
+    grid-template-columns: 1fr;
+  }
+
+  .process-cta .cta-card {
+    padding: 48px 24px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /* FAQ 반응형 */
+  .faq-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .faq-sidebar {
+    position: static;
+    padding: 16px;
+  }
+
+  .faq-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .faq-menu-item {
+    padding: 10px 14px;
+    border-radius: 100px;
+    background: var(--color-bg-tertiary);
+  }
+
+  .faq-menu-item .menu-text {
+    display: none;
+  }
+
+  .faq-menu-item.active .menu-text {
+    display: inline;
+  }
+
+  .faq-menu-item .menu-count {
+    display: none;
+  }
+
+  .faq-content-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .faq-question {
+    padding: 16px;
+  }
+
+  .faq-answer p {
+    padding: 0 16px 16px;
+  }
+}
