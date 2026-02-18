@@ -1,0 +1,34 @@
+{
+  "id": "MK5V9GZE",
+  "slug": "MK5V9GZE",
+  "title": "온라인 교육 플랫폼",
+  "client": "비공개",
+  "industry": "교육",
+  "category": "web",
+  "year": "2024",
+  "period": "2024.05 - 2024.09",
+  "role": "프론트엔드 개발",
+  "thumbnail": null,
+  "images": [],
+  "summary": "실시간 강의와 VOD를 결합한 온라인 교육 서비스",
+  "challenge": "코로나 이후 대면 교육이 어려워지면서, 기존 교육 콘텐츠를 온라인으로 전환할 플랫폼이 필요했습니다.",
+  "description": "라이브 강의와 녹화 VOD를 모두 지원하는 온라인 교육 플랫폼을 개발했습니다. 수강생 진도 관리, 과제 제출, 실시간 Q&A 등 LMS 핵심 기능을 포함합니다.",
+  "techStack": ["React", "Next.js", "WebRTC", "HLS.js", "Tailwind CSS"],
+  "features": ["실시간 라이브 강의", "VOD 스트리밍 및 진도 관리", "과제 제출 및 채점 시스템", "수강생 대시보드"],
+  "results": [
+    { "value": "72%", "label": "수강 완료율" },
+    { "value": "500명", "label": "동시 접속 안정 처리" },
+    { "value": "0.3초", "label": "VOD 버퍼링 시간" }
+  ],
+  "highlights": [
+    { "title": "끊김 없는 스트리밍", "description": "Adaptive Bitrate로 네트워크 환경에 자동 대응" },
+    { "title": "학습 분석", "description": "수강생별 학습 패턴 분석 대시보드 제공" }
+  ],
+  "liveUrl": null,
+  "githubUrl": null,
+  "seo": {
+    "title": "온라인 교육 플랫폼 개발 - DUZZ",
+    "description": "LMS 온라인 교육 플랫폼 개발 사례",
+    "keywords": "교육플랫폼, LMS, 온라인강의"
+  }
+}

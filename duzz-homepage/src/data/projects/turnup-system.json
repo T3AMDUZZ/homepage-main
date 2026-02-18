@@ -1,0 +1,35 @@
+{
+  "id": "turnup-system",
+  "slug": "turnup-system",
+  "title": "TurnUp 시스템 및 알림톡 연동",
+  "client": "TurnUp",
+  "industry": "서비스/플랫폼",
+  "category": "system",
+  "year": "2024",
+  "period": "2024.06 - 진행중",
+  "role": "시스템 개발 및 API 연동",
+  "thumbnail": "/images/projects/turnup-thumb.jpg",
+  "images": ["/images/projects/turnup-1.jpg", "/images/projects/turnup-2.jpg", "/images/projects/turnup-3.jpg"],
+  "summary": "비즈니스 자동화를 위한 시스템 구축 및 메시징 연동",
+  "challenge": "수동으로 고객 알림을 보내고 있어 운영 인력이 과다하게 투입되고, 발송 누락이 빈번하게 발생하고 있었습니다.",
+  "description": "TurnUp의 업무 효율화를 위한 통합 시스템을 구축하고 카카오 알림톡 API를 연동하여 실시간 알림 서비스를 제공합니다. 사용자 행동 기반 자동 메시지 발송으로 고객 engagement를 크게 향상시켰습니다.",
+  "techStack": ["Node.js", "Express", "MongoDB", "Redis", "Kakao API", "Docker", "AWS EC2"],
+  "features": ["실시간 알림톡 발송", "예약 메시지 시스템", "발송 통계 대시보드", "템플릿 관리", "Webhook 연동", "에러 로깅 및 모니터링"],
+  "results": [
+    { "value": "99.8%", "label": "발송 성공률" },
+    { "value": "40%↓", "label": "운영 비용 절감" },
+    { "value": "5,000건", "label": "일 평균 발송량" }
+  ],
+  "highlights": [
+    { "title": "안정적인 시스템", "description": "대용량 트래픽 처리 및 장애 대응 체계 구축" },
+    { "title": "실시간 모니터링", "description": "발송 현황 실시간 추적 및 알림" },
+    { "title": "확장성", "description": "MSA 구조로 향후 기능 추가 용이" }
+  ],
+  "liveUrl": "https://turnup.kr",
+  "githubUrl": null,
+  "seo": {
+    "title": "TurnUp 시스템 개발 및 알림톡 연동 - DUZZ",
+    "description": "카카오 알림톡 API 연동 및 메시징 시스템 구축",
+    "keywords": "알림톡연동, 카카오API, 시스템개발"
+  }
+}

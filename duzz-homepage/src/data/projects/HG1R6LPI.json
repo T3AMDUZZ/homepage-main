@@ -1,0 +1,34 @@
+{
+  "id": "HG1R6LPI",
+  "slug": "HG1R6LPI",
+  "title": "기업 그룹웨어 포탈",
+  "client": "비공개",
+  "industry": "기업/사무",
+  "category": "system",
+  "year": "2024",
+  "period": "2024.02 - 2024.06",
+  "role": "풀스택 개발",
+  "thumbnail": null,
+  "images": [],
+  "summary": "중소기업 맞춤형 그룹웨어 및 업무 포탈 시스템",
+  "challenge": "이메일과 메신저에 분산된 업무 커뮤니케이션으로 결재 지연이 심하고, 종이 문서 사용량이 많았습니다.",
+  "description": "중소기업의 업무 효율화를 위한 그룹웨어 시스템을 구축했습니다. 전자결재, 일정관리, 게시판, 메신저 등 업무에 필요한 핵심 기능을 통합 제공합니다.",
+  "techStack": ["React", "Spring Boot", "MySQL", "WebSocket", "AWS"],
+  "features": ["전자결재 워크플로우", "팀 캘린더 및 일정 관리", "실시간 메신저", "공지사항 및 게시판"],
+  "results": [
+    { "value": "60%↓", "label": "결재 처리 시간 단축" },
+    { "value": "85%", "label": "커뮤니케이션 만족도" },
+    { "value": "90%↓", "label": "종이 문서 사용 감소" }
+  ],
+  "highlights": [
+    { "title": "유연한 결재선", "description": "부서별 맞춤 결재 워크플로우 설정 가능" },
+    { "title": "통합 알림", "description": "결재·일정·메시지를 하나의 알림 센터로 통합" }
+  ],
+  "liveUrl": null,
+  "githubUrl": null,
+  "seo": {
+    "title": "기업 그룹웨어 포탈 시스템 - DUZZ",
+    "description": "중소기업 맞춤형 그룹웨어 시스템 구축",
+    "keywords": "그룹웨어, 전자결재, 기업시스템"
+  }
+}

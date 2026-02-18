@@ -1,0 +1,34 @@
+{
+  "id": "SX2J7EKV",
+  "slug": "SX2J7EKV",
+  "title": "건설 프로젝트 관리 시스템",
+  "client": "비공개",
+  "industry": "건설/건축",
+  "category": "system",
+  "year": "2023",
+  "period": "2023.11 - 2024.03",
+  "role": "시스템 설계 & 개발",
+  "thumbnail": null,
+  "images": [],
+  "summary": "건설 현장 공정 관리 및 인력·자재 추적 시스템",
+  "challenge": "다수 현장의 공정률을 본사에서 파악하기 어렵고, 자재 발주 지연으로 공정이 자주 지연되고 있었습니다.",
+  "description": "건설사의 다수 현장 프로젝트를 통합 관리하는 시스템을 구축했습니다. 공정률 추적, 인력 배치, 자재 발주, 안전 점검 기록 등을 하나의 플랫폼에서 관리합니다.",
+  "techStack": ["React", "Node.js", "MongoDB", "Socket.io", "AWS"],
+  "features": ["공정률 간트 차트", "인력 배치 현황판", "자재 발주 및 입고 관리", "안전 점검 일지"],
+  "results": [
+    { "value": "25%↓", "label": "공정 지연율 감소" },
+    { "value": "15%↓", "label": "자재 낭비 절감" },
+    { "value": "70%↓", "label": "보고서 작성 시간" }
+  ],
+  "highlights": [
+    { "title": "실시간 공정 현황", "description": "현장별 공정률을 실시간으로 시각화" },
+    { "title": "모바일 현장 입력", "description": "현장 근로자가 모바일로 일일 보고 작성" }
+  ],
+  "liveUrl": null,
+  "githubUrl": null,
+  "seo": {
+    "title": "건설 프로젝트 관리 시스템 - DUZZ",
+    "description": "건설 현장 공정·인력·자재 통합 관리 시스템",
+    "keywords": "건설관리, 프로젝트관리, 공정관리"
+  }
+}

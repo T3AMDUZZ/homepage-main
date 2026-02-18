@@ -1,0 +1,34 @@
+{
+  "id": "RW3K5MAF",
+  "slug": "RW3K5MAF",
+  "title": "법률 사무소 브랜드 홈페이지",
+  "client": "비공개",
+  "industry": "법률/전문서비스",
+  "category": "branding",
+  "year": "2024",
+  "period": "2024.01 - 2024.02",
+  "role": "기획 & 프론트엔드",
+  "thumbnail": null,
+  "images": [],
+  "summary": "신뢰감을 전달하는 법률 사무소 브랜드 웹사이트",
+  "challenge": "온라인 홍보 채널이 없어 신규 고객 유입이 소개에만 의존하고 있었고, 검색 노출이 거의 되지 않았습니다.",
+  "description": "법률 사무소의 전문성과 신뢰감을 효과적으로 전달하는 브랜드 웹사이트를 제작했습니다. 변호사 프로필, 업무 분야, 성공 사례 등을 체계적으로 구성했습니다.",
+  "techStack": ["React", "Tailwind CSS", "Framer Motion", "Sanity CMS"],
+  "features": ["변호사 프로필 소개", "업무 분야별 상세 페이지", "성공 사례 포트폴리오", "온라인 상담 예약"],
+  "results": [
+    { "value": "60건+", "label": "월 온라인 상담 문의" },
+    { "value": "1페이지", "label": "Google 검색 노출" },
+    { "value": "30%↓", "label": "이탈률 감소" }
+  ],
+  "highlights": [
+    { "title": "신뢰감 있는 디자인", "description": "절제된 컬러와 타이포그래피로 전문성 표현" },
+    { "title": "CMS 연동", "description": "Sanity로 성공 사례 비개발자도 직접 관리" }
+  ],
+  "liveUrl": null,
+  "githubUrl": null,
+  "seo": {
+    "title": "법률 사무소 홈페이지 제작 - DUZZ",
+    "description": "법률 사무소 브랜드 웹사이트 제작 사례",
+    "keywords": "법률사무소홈페이지, 브랜딩, 웹사이트제작"
+  }
+}

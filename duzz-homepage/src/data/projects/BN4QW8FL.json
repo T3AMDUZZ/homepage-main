@@ -1,0 +1,34 @@
+{
+  "id": "BN4QW8FL",
+  "slug": "BN4QW8FL",
+  "title": "스마트 팩토리 모니터링 시스템",
+  "client": "비공개",
+  "industry": "제조/산업",
+  "category": "system",
+  "year": "2024",
+  "period": "2024.03 - 2024.07",
+  "role": "백엔드 개발",
+  "thumbnail": null,
+  "images": [],
+  "summary": "IoT 센서 데이터 기반 공장 실시간 모니터링 시스템",
+  "challenge": "공장 설비 이상을 사후에 발견하여 다운타임이 길어지고, 수작업 점검으로 인력 비용이 과다하게 발생하고 있었습니다.",
+  "description": "제조 공장의 IoT 센서 데이터를 실시간으로 수집·분석하는 모니터링 시스템을 구축했습니다. 이상 감지 시 즉시 알림을 발송하여 설비 가동률을 극대화하고 예방 정비를 지원합니다.",
+  "techStack": ["Node.js", "MQTT", "InfluxDB", "Grafana", "Docker"],
+  "features": ["IoT 센서 데이터 실시간 수집", "이상 감지 알림 시스템", "설비 가동률 대시보드", "데이터 이력 리포트 생성"],
+  "results": [
+    { "value": "35%↓", "label": "설비 다운타임 감소" },
+    { "value": "50만건", "label": "일 데이터 처리량" },
+    { "value": "60%↑", "label": "예방 정비 효율" }
+  ],
+  "highlights": [
+    { "title": "실시간 처리", "description": "MQTT 기반 센서 데이터 밀리초 단위 수집" },
+    { "title": "확장 가능 아키텍처", "description": "센서 수 증가에 유연하게 대응하는 설계" }
+  ],
+  "liveUrl": null,
+  "githubUrl": null,
+  "seo": {
+    "title": "스마트 팩토리 모니터링 시스템 - DUZZ",
+    "description": "IoT 기반 공장 모니터링 시스템 개발 사례",
+    "keywords": "스마트팩토리, IoT, 모니터링시스템"
+  }
+}

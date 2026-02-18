@@ -1,0 +1,34 @@
+{
+  "id": "JA8N3FOW",
+  "slug": "JA8N3FOW",
+  "title": "맛집 리뷰 모바일 서비스",
+  "client": "비공개",
+  "industry": "F&B/라이프스타일",
+  "category": "app",
+  "year": "2023",
+  "period": "2023.04 - 2023.08",
+  "role": "앱 개발",
+  "thumbnail": null,
+  "images": [],
+  "summary": "위치 기반 맛집 추천 및 리뷰 모바일 서비스",
+  "challenge": "기존 맛집 앱들이 광고 위주로 운영되어, 신뢰할 수 있는 실사용자 리뷰 기반 추천 서비스에 대한 수요가 있었습니다.",
+  "description": "사용자 위치를 기반으로 주변 맛집을 추천하고 리뷰를 공유할 수 있는 모바일 앱을 개발했습니다. AI 기반 취향 분석으로 개인화된 맛집을 추천합니다.",
+  "techStack": ["Flutter", "Dart", "Firebase", "Google Maps API"],
+  "features": ["위치 기반 맛집 추천", "사진 리뷰 작성", "북마크 및 맛집 컬렉션", "친구 추천 공유"],
+  "results": [
+    { "value": "12,000건", "label": "누적 리뷰 수" },
+    { "value": "8,000+", "label": "앱 다운로드" },
+    { "value": "1,200명", "label": "일 활성 사용자" }
+  ],
+  "highlights": [
+    { "title": "빠른 앱 성능", "description": "Flutter로 iOS/Android 동시 지원, 네이티브급 성능" },
+    { "title": "AI 추천", "description": "사용자 리뷰 패턴 분석 기반 맞춤 추천" }
+  ],
+  "liveUrl": null,
+  "githubUrl": null,
+  "seo": {
+    "title": "맛집 리뷰 모바일 서비스 - DUZZ",
+    "description": "위치 기반 맛집 추천 앱 개발 사례",
+    "keywords": "맛집앱, Flutter, 위치기반서비스"
+  }
+}

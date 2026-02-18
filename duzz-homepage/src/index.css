@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #111111;
+  --color-primary-light: #2a2a2a;
+  --color-secondary: #f7f7f7;
+  --color-accent: #777777;
+  --color-accent-light: #999999;
+  --color-background: #ffffff;
+  --color-text: #222222;
+  --color-dark: #111111;
+  --color-dark-lighter: #1a1a1a;
+  --color-highlight: #7c3aed;
+  --color-highlight-light: #a78bfa;
+  --color-highlight-soft: #f3f0ff;
+  --color-gradient-start: #7c3aed;
+  --color-gradient-end: #a78bfa;
+  --font-sans: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Pretendard Variable', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f5f5f5; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-highlight) 0%, var(--color-highlight-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth section transitions */
+section {
+  position: relative;
+}

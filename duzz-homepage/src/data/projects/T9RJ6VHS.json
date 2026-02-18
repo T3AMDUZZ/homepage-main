@@ -1,0 +1,34 @@
+{
+  "id": "T9RJ6VHS",
+  "slug": "T9RJ6VHS",
+  "title": "국내 여행 예약 플랫폼",
+  "client": "비공개",
+  "industry": "여행/관광",
+  "category": "web",
+  "year": "2023",
+  "period": "2023.08 - 2023.12",
+  "role": "프론트엔드 개발",
+  "thumbnail": null,
+  "images": [],
+  "summary": "국내 숙소·액티비티 통합 예약 웹 플랫폼",
+  "challenge": "숙소와 액티비티를 각각 다른 사이트에서 검색해야 하는 불편함으로 고객 이탈이 높았습니다.",
+  "description": "국내 여행 숙소와 액티비티를 한곳에서 검색하고 예약할 수 있는 플랫폼을 개발했습니다. 지도 기반 검색, 실시간 가격 비교, 리뷰 시스템 등 핵심 기능을 구현했습니다.",
+  "techStack": ["React", "Redux Toolkit", "Kakao Map API", "Tailwind CSS"],
+  "features": ["지도 기반 숙소 검색", "실시간 가격 비교", "리뷰 및 평점 시스템", "예약 내역 관리"],
+  "results": [
+    { "value": "15,000명", "label": "월 활성 사용자" },
+    { "value": "6.8%", "label": "예약 전환율" },
+    { "value": "4분+", "label": "평균 체류 시간" }
+  ],
+  "highlights": [
+    { "title": "직관적 지도 검색", "description": "Kakao Map 연동 클러스터링 마커 구현" },
+    { "title": "빠른 검색 결과", "description": "디바운싱과 캐싱으로 검색 UX 최적화" }
+  ],
+  "liveUrl": null,
+  "githubUrl": null,
+  "seo": {
+    "title": "여행 예약 플랫폼 개발 - DUZZ",
+    "description": "국내 여행 숙소 예약 웹 플랫폼 개발 사례",
+    "keywords": "여행플랫폼, 예약시스템, React"
+  }
+}
