@@ -8,27 +8,57 @@
   "year": "2024",
   "period": "2024.02 - 2024.06",
   "role": "풀스택 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "중소기업 맞춤형 그룹웨어 및 업무 포탈 시스템",
-  "challenge": "이메일과 메신저에 분산된 업무 커뮤니케이션으로 결재 지연이 심하고, 종이 문서 사용량이 많았습니다.",
-  "description": "중소기업의 업무 효율화를 위한 그룹웨어 시스템을 구축했습니다. 전자결재, 일정관리, 게시판, 메신저 등 업무에 필요한 핵심 기능을 통합 제공합니다.",
-  "techStack": ["React", "Spring Boot", "MySQL", "WebSocket", "AWS"],
-  "features": ["전자결재 워크플로우", "팀 캘린더 및 일정 관리", "실시간 메신저", "공지사항 및 게시판"],
+  "thumbnail": "/projects/HG1R6LPI/thumbnail.svg",
+  "images": [
+    "/projects/HG1R6LPI/thumbnail.svg",
+    "/projects/HG1R6LPI/01.svg",
+    "/projects/HG1R6LPI/02.svg"
+  ],
+  "summary": "직원 50인 규모 제조업체 맞춤형 그룹웨어",
+  "challenge": "카카오톡과 이메일에 분산된 업무 소통으로 결재 문서가 유실되거나 지연되는 일이 잦았습니다. 상용 그룹웨어는 불필요한 기능이 많고 월 비용이 부담된다는 것이 클라이언트의 요구사항이었습니다.",
+  "description": "해당 업체의 업무 흐름에 맞춘 경량 그룹웨어를 구축했습니다. 전자결재(품의서·지출결의서·휴가신청), 팀 캘린더, 공지사항 게시판, 실시간 메신저를 하나의 포탈에 통합했습니다. 부서별 결재선 커스터마이징이 가능하도록 설계했습니다.",
+  "techStack": [
+    "React",
+    "Spring Boot",
+    "MySQL",
+    "WebSocket",
+    "AWS EC2"
+  ],
+  "features": [
+    "결재 양식 3종(품의·지출·휴가) 및 커스텀 결재선",
+    "부서별 팀 캘린더",
+    "WebSocket 기반 실시간 메신저",
+    "공지사항 게시판 및 파일 공유"
+  ],
   "results": [
-    { "value": "60%↓", "label": "결재 처리 시간 단축" },
-    { "value": "85%", "label": "커뮤니케이션 만족도" },
-    { "value": "90%↓", "label": "종이 문서 사용 감소" }
+    {
+      "value": "평균 4시간→40분",
+      "label": "결재 처리 소요시간"
+    },
+    {
+      "value": "82%",
+      "label": "직원 만족도 (사내 설문)"
+    },
+    {
+      "value": "종이 문서 95% 제거",
+      "label": "페이퍼리스 전환"
+    }
   ],
   "highlights": [
-    { "title": "유연한 결재선", "description": "부서별 맞춤 결재 워크플로우 설정 가능" },
-    { "title": "통합 알림", "description": "결재·일정·메시지를 하나의 알림 센터로 통합" }
+    {
+      "title": "유연한 결재선",
+      "description": "부서·직급별 결재 경로를 관리자가 직접 설정"
+    },
+    {
+      "title": "저비용 운영",
+      "description": "EC2 단일 인스턴스로 월 3만원대 서버 비용"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
-    "title": "기업 그룹웨어 포탈 시스템 - DUZZ",
-    "description": "중소기업 맞춤형 그룹웨어 시스템 구축",
-    "keywords": "그룹웨어, 전자결재, 기업시스템"
+    "title": "기업 그룹웨어 포탈 개발 - DUZZ",
+    "description": "중소기업 맞춤형 경량 그룹웨어 구축 사례",
+    "keywords": "그룹웨어, 전자결재, 사내시스템"
   }
 }

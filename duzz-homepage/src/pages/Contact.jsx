@@ -83,13 +83,38 @@ const faqCategories = [
   },
 ]
 
+const CONTACT_API_URL = import.meta.env.VITE_CONTACT_API_URL
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [sendError, setSendError] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
   const { register, handleSubmit, formState: { errors } } = useForm()
 
-  const onSubmit = () => {
-    setSubmitted(true)
+  const onSubmit = async (data) => {
+    if (!CONTACT_API_URL) {
+      console.warn('VITE_CONTACT_API_URL이 설정되지 않았습니다.')
+      setSubmitted(true)
+      return
+    }
+
+    setSending(true)
+    setSendError(false)
+
+    try {
+      await fetch(CONTACT_API_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify(data),
+      })
+      setSubmitted(true)
+    } catch {
+      setSendError(true)
+    } finally {
+      setSending(false)
+    }
   }
 
   if (submitted) {
@@ -220,11 +245,15 @@ export default function Contact() {
                   {errors.detail && <p className="text-red-500 text-xs mt-1">{errors.detail.message}</p>}
                 </div>
 
-                <button type="submit"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-light transition-colors"
+                {sendError && (
+                  <p className="text-red-500 text-sm">전송에 실패했습니다. 잠시 후 다시 시도하시거나 이메일로 문의해주세요.</p>
+                )}
+
+                <button type="submit" disabled={sending}
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send size={16} />
-                  문의 보내기
+                  {sending ? '전송 중...' : '문의 보내기'}
                 </button>
               </form>
             </motion.div>

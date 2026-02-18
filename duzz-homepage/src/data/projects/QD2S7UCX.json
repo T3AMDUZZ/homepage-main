@@ -5,30 +5,61 @@
   "client": "비공개",
   "industry": "물류/유통",
   "category": "system",
-  "year": "2023",
-  "period": "2023.09 - 2024.01",
+  "year": "2024",
+  "period": "2024.03 - 2024.07",
   "role": "백엔드 & 프론트엔드",
-  "thumbnail": null,
-  "images": [],
-  "summary": "입출고·배송·재고를 한눈에 관리하는 물류 대시보드",
-  "challenge": "엑셀 기반 수작업 재고 관리로 오류가 잦고, 배송 현황 파악이 어려워 고객 클레임이 증가하고 있었습니다.",
-  "description": "물류 센터의 입출고, 배송 현황, 재고 수량을 실시간으로 모니터링하는 통합 대시보드를 구축했습니다. 엑셀 기반 수작업에서 웹 기반 자동화로 전환하여 운영 효율을 크게 개선했습니다.",
-  "techStack": ["Vue.js", "Node.js", "PostgreSQL", "Chart.js", "Docker"],
-  "features": ["실시간 재고 현황 대시보드", "입출고 바코드 스캔 연동", "배송 추적 및 알림", "월간 리포트 자동 생성"],
+  "thumbnail": "/projects/QD2S7UCX/thumbnail.svg",
+  "images": [
+    "/projects/QD2S7UCX/thumbnail.svg",
+    "/projects/QD2S7UCX/01.svg",
+    "/projects/QD2S7UCX/02.svg"
+  ],
+  "summary": "3PL 물류업체의 입출고·재고·배송 통합 관리 시스템",
+  "challenge": "엑셀 17개 시트로 재고를 관리하던 3PL 업체가, 화주사가 늘어나면서 실시간 재고 파악이 불가능해졌습니다. 출고 오류율 12%가 거래처 이탈의 직접 원인이 되고 있었습니다.",
+  "description": "입고 검수부터 적치·피킹·출고·배송까지 물류 전 과정을 웹 대시보드로 관리하는 시스템을 구축했습니다. 바코드 스캔 연동으로 수작업 입력을 제거하고, 화주사별 재고 현황을 실시간으로 제공합니다. 월말 자동 리포트로 보고서 작성 시간도 대폭 줄였습니다.",
+  "techStack": [
+    "Vue.js",
+    "Node.js",
+    "PostgreSQL",
+    "Chart.js",
+    "Docker",
+    "WebSocket"
+  ],
+  "features": [
+    "화주사별 실시간 재고 현황 대시보드",
+    "바코드 스캔 기반 입출고 처리",
+    "배송 상태 추적 및 화주사 공유 링크",
+    "월간 물동량 리포트 자동 생성"
+  ],
   "results": [
-    { "value": "90%↓", "label": "재고 파악 시간 단축" },
-    { "value": "2%", "label": "배송 오류율 (12%→2%)" },
-    { "value": "80%↓", "label": "보고서 작성 시간" }
+    {
+      "value": "출고 오류 12%→1.8%",
+      "label": "출고 정확도 개선"
+    },
+    {
+      "value": "재고 파악 2일→실시간",
+      "label": "재고 현황 파악 속도"
+    },
+    {
+      "value": "월 20시간 절감",
+      "label": "보고서 작성 시간"
+    }
   ],
   "highlights": [
-    { "title": "실시간 동기화", "description": "WebSocket 기반 재고 데이터 즉시 반영" },
-    { "title": "자동 리포트", "description": "스케줄러로 PDF 리포트 자동 생성·발송" }
+    {
+      "title": "바코드 연동",
+      "description": "기존 핸디 스캐너 호환, 스캔 즉시 재고 반영"
+    },
+    {
+      "title": "화주사 포탈",
+      "description": "화주사가 직접 재고·배송 현황을 조회하는 전용 페이지"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "물류 통합 관리 대시보드 - DUZZ",
-    "description": "물류 센터 재고·배송 통합 관리 시스템 개발",
-    "keywords": "물류시스템, 대시보드, 재고관리"
+    "description": "3PL 물류업체 입출고·재고 통합 관리 시스템 구축 사례",
+    "keywords": "물류시스템, WMS, 재고관리"
   }
 }

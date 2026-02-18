@@ -7,9 +7,9 @@ const projectFiles = import.meta.glob('./projects/*.json', { eager: true })
 export const projects = Object.values(projectFiles)
   .map((mod) => mod.default)
   .sort((a, b) => {
-    // 실제 프로젝트(slug에 영문-포함)를 먼저, 나머지는 year 내림차순
-    const aReal = a.slug.includes('-') ? 0 : 1
-    const bReal = b.slug.includes('-') ? 0 : 1
+    // 공개 프로젝트(client가 '비공개'가 아닌)를 먼저, 나머지는 year 내림차순
+    const aReal = a.client !== '비공개' ? 0 : 1
+    const bReal = b.client !== '비공개' ? 0 : 1
     if (aReal !== bReal) return aReal - bReal
     return (b.year || '0').localeCompare(a.year || '0')
   })

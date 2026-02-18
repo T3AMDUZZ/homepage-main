@@ -5,30 +5,61 @@
   "client": "비공개",
   "industry": "식품/유통",
   "category": "ecommerce",
-  "year": "2024",
-  "period": "2024.04 - 2024.08",
+  "year": "2025",
+  "period": "2025.04 - 2025.08",
   "role": "백엔드 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "식당·급식업체를 위한 식자재 온라인 주문 플랫폼",
-  "challenge": "전화·팩스 기반 발주로 주문 오류가 잦고, 가격 비교가 어려워 식자재 비용이 과다 지출되고 있었습니다.",
-  "description": "식당과 급식업체가 식자재를 온라인으로 주문하고 정기 배송받을 수 있는 B2B 플랫폼을 개발했습니다. 가격 비교, 자동 발주, 정산 관리 등 B2B 커머스 특화 기능을 구현했습니다.",
-  "techStack": ["Node.js", "Express", "PostgreSQL", "ElasticSearch", "AWS S3"],
-  "features": ["식자재 카탈로그 및 가격 비교", "정기 자동 발주 시스템", "배송 추적 및 알림", "월별 정산 리포트"],
+  "thumbnail": "/projects/FC6G4QTN/thumbnail.svg",
+  "images": [
+    "/projects/FC6G4QTN/thumbnail.svg",
+    "/projects/FC6G4QTN/01.svg",
+    "/projects/FC6G4QTN/02.svg"
+  ],
+  "summary": "중소 음식점 대상 식자재 발주·정산 B2B 플랫폼",
+  "challenge": "전화·카톡 기반 수기 발주로 주문 누락과 단가 착오가 반복되고 있었습니다. 월말 정산도 엑셀 수작업이라 거래처가 늘수록 운영 부담이 가중되는 상황이었습니다.",
+  "description": "식자재 도매업체와 음식점을 연결하는 B2B 발주 플랫폼을 구축했습니다. 거래처별 단가 관리, 요일별 자동 발주, 월별 정산서 자동 생성 등 B2B 유통에 특화된 기능을 구현했습니다. 기존 전화 발주 대비 주문 처리 시간을 대폭 줄였습니다.",
+  "techStack": [
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "ElasticSearch",
+    "AWS S3",
+    "ExcelJS"
+  ],
+  "features": [
+    "거래처별 단가표 관리",
+    "요일별 자동 반복 발주",
+    "배송 일자·시간대 지정",
+    "월별 거래 명세서 자동 생성"
+  ],
   "results": [
-    { "value": "200+", "label": "거래 업체 수" },
-    { "value": "85%", "label": "주문 처리 자동화율" },
-    { "value": "5억+", "label": "월 거래액" }
+    {
+      "value": "180+",
+      "label": "등록 음식점 수"
+    },
+    {
+      "value": "78%",
+      "label": "발주 처리 자동화율"
+    },
+    {
+      "value": "3.2억",
+      "label": "월 평균 거래액"
+    }
   ],
   "highlights": [
-    { "title": "스마트 발주", "description": "소비 패턴 분석으로 자동 발주 수량 추천" },
-    { "title": "빠른 검색", "description": "ElasticSearch로 10만 SKU 즉시 검색" }
+    {
+      "title": "단가 관리 자동화",
+      "description": "거래처·품목별 개별 단가 설정 및 일괄 변경 지원"
+    },
+    {
+      "title": "정산 자동화",
+      "description": "월말 거래 명세서 PDF/엑셀 자동 생성 및 발송"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "식자재 B2B 유통 플랫폼 - DUZZ",
-    "description": "식자재 온라인 B2B 유통 플랫폼 개발",
-    "keywords": "B2B플랫폼, 식자재유통, 이커머스"
+    "description": "식자재 도매 B2B 발주·정산 플랫폼 개발 사례",
+    "keywords": "B2B플랫폼, 식자재유통, 발주시스템"
   }
 }

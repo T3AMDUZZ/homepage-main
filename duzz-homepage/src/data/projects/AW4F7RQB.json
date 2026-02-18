@@ -8,27 +8,57 @@
   "year": "2023",
   "period": "2023.05 - 2023.07",
   "role": "풀스택 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "전국 꽃배달 주문 및 플로리스트 매칭 웹 서비스",
-  "challenge": "전국 배송이 가능한 꽃배달 서비스가 부족하고, 플로리스트와 주문자를 효율적으로 연결할 플랫폼이 없었습니다.",
-  "description": "전국 플로리스트를 연결하는 꽃배달 플랫폼을 개발했습니다. 당일 배송, 정기 구독, 기업 대량 주문 등 다양한 주문 형태를 지원합니다.",
-  "techStack": ["React", "Node.js", "MongoDB", "Toss Payments API"],
-  "features": ["지역별 플로리스트 매칭", "당일/예약 배송 선택", "정기 구독 서비스", "기업 대량 주문 견적"],
+  "thumbnail": "/projects/AW4F7RQB/thumbnail.svg",
+  "images": [
+    "/projects/AW4F7RQB/thumbnail.svg",
+    "/projects/AW4F7RQB/01.svg",
+    "/projects/AW4F7RQB/02.svg"
+  ],
+  "summary": "지역 플로리스트 연결형 당일배송 꽃배달 커머스",
+  "challenge": "기존에 네이버 스마트스토어로만 운영하던 꽃배달 업체가, 당일배송·정기구독 등 자체 기능이 필요해져 독립 플랫폼 구축을 의뢰했습니다. 배송 권역별로 가맹 플로리스트에게 자동 배정하는 로직이 핵심 요구사항이었습니다.",
+  "description": "서울·수도권 권역별 플로리스트 자동 배정 시스템을 포함한 꽃배달 커머스를 구축했습니다. 토스페이먼츠 결제 연동, 주문 접수 시 플로리스트 앱 푸시 알림, 배송 완료 사진 전송 기능까지 포함하여 주문-제작-배송-확인의 전 과정을 자동화했습니다.",
+  "techStack": [
+    "React",
+    "Node.js",
+    "MongoDB",
+    "Toss Payments API",
+    "Firebase Cloud Messaging"
+  ],
+  "features": [
+    "권역별 플로리스트 자동 배정",
+    "당일/예약 배송 및 정기구독",
+    "배송 완료 사진 촬영·전송",
+    "기업 대량 주문 별도 견적"
+  ],
   "results": [
-    { "value": "2,000건", "label": "월 주문 건수" },
-    { "value": "35%", "label": "재주문율" },
-    { "value": "4.8", "label": "배송 만족도 (5점)" }
+    {
+      "value": "1,400건",
+      "label": "런칭 3개월 누적 주문"
+    },
+    {
+      "value": "31%",
+      "label": "정기구독 재결제율"
+    },
+    {
+      "value": "4.7",
+      "label": "배송 만족도 (5점)"
+    }
   ],
   "highlights": [
-    { "title": "스마트 매칭", "description": "주문 지역·상품별 최적 플로리스트 자동 배정" },
-    { "title": "간편 결제", "description": "Toss Payments 연동으로 3초 결제 완료" }
+    {
+      "title": "자동 배정 로직",
+      "description": "수신지 우편번호 기반 최적 플로리스트 자동 매칭"
+    },
+    {
+      "title": "실시간 상태 추적",
+      "description": "주문접수→제작중→배송중→완료 4단계 실시간 노출"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "온라인 꽃배달 서비스 - DUZZ",
-    "description": "전국 꽃배달 주문 플랫폼 개발 사례",
-    "keywords": "꽃배달, 웹서비스, 플랫폼개발"
+    "description": "플로리스트 매칭 기반 꽃배달 커머스 개발 사례",
+    "keywords": "꽃배달, 커머스개발, 플랫폼개발"
   }
 }

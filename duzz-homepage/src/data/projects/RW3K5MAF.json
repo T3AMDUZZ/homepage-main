@@ -8,27 +8,57 @@
   "year": "2024",
   "period": "2024.01 - 2024.02",
   "role": "기획 & 프론트엔드",
-  "thumbnail": null,
-  "images": [],
-  "summary": "신뢰감을 전달하는 법률 사무소 브랜드 웹사이트",
-  "challenge": "온라인 홍보 채널이 없어 신규 고객 유입이 소개에만 의존하고 있었고, 검색 노출이 거의 되지 않았습니다.",
-  "description": "법률 사무소의 전문성과 신뢰감을 효과적으로 전달하는 브랜드 웹사이트를 제작했습니다. 변호사 프로필, 업무 분야, 성공 사례 등을 체계적으로 구성했습니다.",
-  "techStack": ["React", "Tailwind CSS", "Framer Motion", "Sanity CMS"],
-  "features": ["변호사 프로필 소개", "업무 분야별 상세 페이지", "성공 사례 포트폴리오", "온라인 상담 예약"],
+  "thumbnail": "/projects/RW3K5MAF/thumbnail.svg",
+  "images": [
+    "/projects/RW3K5MAF/thumbnail.svg",
+    "/projects/RW3K5MAF/01.svg",
+    "/projects/RW3K5MAF/02.svg"
+  ],
+  "summary": "강남 소재 법률사무소의 전문성 강조형 브랜드 사이트",
+  "challenge": "개업 2년차 법률사무소로, 소개 위주 영업의 한계를 느끼고 온라인 유입 채널이 필요했습니다. 네이버·구글 검색에서 업무 분야별 키워드로 노출되는 것이 핵심 목표였습니다.",
+  "description": "신뢰감을 주는 절제된 디자인과 업무 분야별 상세 페이지를 중심으로 한 브랜드 사이트를 제작했습니다. 변호사 프로필, 승소 사례, 언론 보도 섹션을 구성하고, Sanity CMS를 연동하여 사례를 직접 업데이트할 수 있게 했습니다. 페이지별 SEO 메타 최적화로 검색 노출을 확보했습니다.",
+  "techStack": [
+    "React",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Sanity CMS",
+    "Vercel"
+  ],
+  "features": [
+    "업무 분야별 상세 페이지 (민사·형사·기업자문 등)",
+    "승소 사례 포트폴리오 (CMS 관리)",
+    "변호사 프로필 및 경력 소개",
+    "온라인 상담 예약 폼"
+  ],
   "results": [
-    { "value": "60건+", "label": "월 온라인 상담 문의" },
-    { "value": "1페이지", "label": "Google 검색 노출" },
-    { "value": "30%↓", "label": "이탈률 감소" }
+    {
+      "value": "월 45건",
+      "label": "온라인 상담 문의"
+    },
+    {
+      "value": "구글 1페이지",
+      "label": "'강남 기업자문 변호사' 검색"
+    },
+    {
+      "value": "이탈률 62%→38%",
+      "label": "사이트 이탈률 개선"
+    }
   ],
   "highlights": [
-    { "title": "신뢰감 있는 디자인", "description": "절제된 컬러와 타이포그래피로 전문성 표현" },
-    { "title": "CMS 연동", "description": "Sanity로 성공 사례 비개발자도 직접 관리" }
+    {
+      "title": "SEO 특화",
+      "description": "업무 분야별 롱테일 키워드 타겟 페이지 구성"
+    },
+    {
+      "title": "자체 관리",
+      "description": "Sanity CMS로 사례·뉴스 비개발자 직접 관리"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "법률 사무소 홈페이지 제작 - DUZZ",
-    "description": "법률 사무소 브랜드 웹사이트 제작 사례",
-    "keywords": "법률사무소홈페이지, 브랜딩, 웹사이트제작"
+    "description": "법률 사무소 SEO 특화 브랜드 사이트 제작 사례",
+    "keywords": "법률사무소홈페이지, SEO, 브랜드사이트"
   }
 }

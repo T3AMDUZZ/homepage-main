@@ -24,7 +24,7 @@ const testimonials = [
 ]
 
 const trustStats = [
-  { icon: FolderOpen, value: '20+', label: '완료 프로젝트' },
+  { icon: FolderOpen, value: '40+', label: '완료 프로젝트' },
   { icon: Users, value: '15+', label: '협력 기업' },
   { icon: Briefcase, value: '10+', label: '업종 경험' },
   { icon: ThumbsUp, value: '98%', label: '고객 만족도' },
@@ -106,7 +106,7 @@ export default function Solutions() {
             <h2 className="text-2xl font-bold text-primary">협력 기업</h2>
           </motion.div>
           <div className="flex flex-wrap justify-center gap-6">
-            {['델몬트', '(주)이첸이엔씨', 'TurnUp'].map((name, i) => (
+            {['블루모션', '(주)이첸이엔씨', 'TurnUp'].map((name, i) => (
               <motion.div key={name} {...fadeUp} transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="w-44 h-20 bg-white border border-gray-100 rounded-xl flex items-center justify-center"
               >

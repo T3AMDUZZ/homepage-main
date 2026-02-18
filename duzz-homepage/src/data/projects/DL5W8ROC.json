@@ -5,30 +5,60 @@
   "client": "비공개",
   "industry": "미디어/콘텐츠",
   "category": "branding",
-  "year": "2024",
-  "period": "2024.06 - 2024.08",
+  "year": "2025",
+  "period": "2025.06 - 2025.08",
   "role": "프론트엔드 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "미디어 기업의 콘텐츠 발행 및 관리를 위한 CMS",
-  "challenge": "콘텐츠 발행 프로세스가 복잡하고, SEO 최적화가 안 되어 검색 유입이 경쟁사 대비 부족했습니다.",
-  "description": "미디어 기업이 기사·영상·이미지 콘텐츠를 효율적으로 작성·편집·발행할 수 있는 CMS를 구축했습니다. 에디터 커스터마이징, 발행 스케줄링, SEO 자동화 등 콘텐츠 운영에 최적화된 기능을 제공합니다.",
-  "techStack": ["React", "TipTap Editor", "Node.js", "MongoDB", "Cloudinary"],
-  "features": ["WYSIWYG 리치 텍스트 에디터", "콘텐츠 예약 발행", "SEO 메타 자동 생성", "이미지/영상 에셋 관리"],
+  "thumbnail": "/projects/DL5W8ROC/thumbnail.svg",
+  "images": [
+    "/projects/DL5W8ROC/thumbnail.svg",
+    "/projects/DL5W8ROC/01.svg",
+    "/projects/DL5W8ROC/02.svg"
+  ],
+  "summary": "온라인 매거진 운영사의 기사 발행·관리 전용 CMS",
+  "challenge": "워드프레스로 운영하던 매거진이 커스텀 레이아웃 한계와 느린 속도 문제로 이탈률이 높았습니다. 에디터 팀이 코드 없이 다양한 형태의 기사를 발행할 수 있는 자체 CMS가 필요했습니다.",
+  "description": "TipTap 에디터를 커스터마이징하여 이미지 갤러리·임베드·인용문 등 매거진 특화 블록을 지원하는 CMS를 구축했습니다. 발행 예약, SEO 메타 자동 생성, Cloudinary 연동 이미지 최적화까지 포함하여 에디터 팀의 발행 워크플로우를 대폭 개선했습니다.",
+  "techStack": [
+    "React",
+    "TipTap Editor",
+    "Node.js",
+    "MongoDB",
+    "Cloudinary"
+  ],
+  "features": [
+    "블록 기반 리치 텍스트 에디터",
+    "발행 예약 및 상태 관리 (초안/검수/발행)",
+    "OG 이미지·메타 디스크립션 자동 생성",
+    "Cloudinary 이미지 자동 리사이징"
+  ],
   "results": [
-    { "value": "3배", "label": "콘텐츠 발행 속도 향상" },
-    { "value": "45%↑", "label": "SEO 유입 트래픽 증가" },
-    { "value": "92%", "label": "에디터 만족도" }
+    {
+      "value": "2.5배",
+      "label": "기사 발행 속도 향상"
+    },
+    {
+      "value": "38%↑",
+      "label": "검색 유입 트래픽 증가"
+    },
+    {
+      "value": "1.8초",
+      "label": "기사 페이지 평균 로딩"
+    }
   ],
   "highlights": [
-    { "title": "강력한 에디터", "description": "TipTap 기반 커스텀 에디터로 자유로운 레이아웃" },
-    { "title": "SEO 자동화", "description": "콘텐츠 분석 기반 메타 태그·OG 이미지 자동 생성" }
+    {
+      "title": "커스텀 블록 에디터",
+      "description": "매거진에 최적화된 15종 콘텐츠 블록 지원"
+    },
+    {
+      "title": "SEO 자동화",
+      "description": "기사 본문 분석 기반 메타 태그 자동 추천"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "미디어 콘텐츠 CMS 개발 - DUZZ",
-    "description": "미디어 기업 콘텐츠 관리 시스템 구축",
-    "keywords": "CMS개발, 콘텐츠관리, 미디어플랫폼"
+    "description": "온라인 매거진 전용 CMS 구축 사례",
+    "keywords": "CMS개발, 콘텐츠관리, 에디터커스텀"
   }
 }

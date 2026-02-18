@@ -5,30 +5,61 @@
   "client": "비공개",
   "industry": "교육",
   "category": "web",
-  "year": "2024",
-  "period": "2024.05 - 2024.09",
+  "year": "2025",
+  "period": "2025.05 - 2025.09",
   "role": "프론트엔드 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "실시간 강의와 VOD를 결합한 온라인 교육 서비스",
-  "challenge": "코로나 이후 대면 교육이 어려워지면서, 기존 교육 콘텐츠를 온라인으로 전환할 플랫폼이 필요했습니다.",
-  "description": "라이브 강의와 녹화 VOD를 모두 지원하는 온라인 교육 플랫폼을 개발했습니다. 수강생 진도 관리, 과제 제출, 실시간 Q&A 등 LMS 핵심 기능을 포함합니다.",
-  "techStack": ["React", "Next.js", "WebRTC", "HLS.js", "Tailwind CSS"],
-  "features": ["실시간 라이브 강의", "VOD 스트리밍 및 진도 관리", "과제 제출 및 채점 시스템", "수강생 대시보드"],
+  "thumbnail": "/projects/MK5V9GZE/thumbnail.svg",
+  "images": [
+    "/projects/MK5V9GZE/thumbnail.svg",
+    "/projects/MK5V9GZE/01.svg",
+    "/projects/MK5V9GZE/02.svg"
+  ],
+  "summary": "직무교육 전문업체의 라이브 강의·VOD 통합 LMS",
+  "challenge": "Zoom + 구글 드라이브 조합으로 운영하던 직무교육 업체가, 수강생 관리와 수료증 발급이 수작업이라 교육 과정이 늘수록 운영이 마비되는 상황이었습니다.",
+  "description": "라이브 강의(WebRTC)와 녹화 VOD를 모두 지원하는 LMS를 개발했습니다. 수강생별 진도율 자동 추적, 과제 제출·채점, 수료증 PDF 자동 발급까지 포함하여 교육 운영 전 과정을 시스템화했습니다. 강사용 대시보드에서 수강생 학습 현황을 한눈에 파악할 수 있습니다.",
+  "techStack": [
+    "React",
+    "Next.js",
+    "WebRTC",
+    "HLS.js",
+    "Tailwind CSS",
+    "Puppeteer"
+  ],
+  "features": [
+    "WebRTC 실시간 라이브 강의",
+    "VOD 스트리밍 및 구간별 진도 추적",
+    "과제 제출·채점 및 피드백",
+    "수료증 PDF 자동 생성·발급"
+  ],
   "results": [
-    { "value": "72%", "label": "수강 완료율" },
-    { "value": "500명", "label": "동시 접속 안정 처리" },
-    { "value": "0.3초", "label": "VOD 버퍼링 시간" }
+    {
+      "value": "68%",
+      "label": "수강 완료율 (업계 평균 42%)"
+    },
+    {
+      "value": "300명",
+      "label": "동시 접속 안정 처리"
+    },
+    {
+      "value": "운영 인력 2명→0.5명",
+      "label": "교육 행정 자동화"
+    }
   ],
   "highlights": [
-    { "title": "끊김 없는 스트리밍", "description": "Adaptive Bitrate로 네트워크 환경에 자동 대응" },
-    { "title": "학습 분석", "description": "수강생별 학습 패턴 분석 대시보드 제공" }
+    {
+      "title": "적응형 스트리밍",
+      "description": "네트워크 환경에 따라 화질 자동 조절 (ABR)"
+    },
+    {
+      "title": "자동 수료 처리",
+      "description": "진도율+과제 점수 기반 수료 자동 판정 및 발급"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "온라인 교육 플랫폼 개발 - DUZZ",
-    "description": "LMS 온라인 교육 플랫폼 개발 사례",
-    "keywords": "교육플랫폼, LMS, 온라인강의"
+    "description": "직무교육 LMS 플랫폼 구축 사례",
+    "keywords": "LMS개발, 온라인교육, 라이브강의"
   }
 }

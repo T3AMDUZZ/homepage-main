@@ -5,30 +5,61 @@
   "client": "비공개",
   "industry": "제조/산업",
   "category": "system",
-  "year": "2024",
-  "period": "2024.03 - 2024.07",
+  "year": "2025",
+  "period": "2025.03 - 2025.07",
   "role": "백엔드 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "IoT 센서 데이터 기반 공장 실시간 모니터링 시스템",
-  "challenge": "공장 설비 이상을 사후에 발견하여 다운타임이 길어지고, 수작업 점검으로 인력 비용이 과다하게 발생하고 있었습니다.",
-  "description": "제조 공장의 IoT 센서 데이터를 실시간으로 수집·분석하는 모니터링 시스템을 구축했습니다. 이상 감지 시 즉시 알림을 발송하여 설비 가동률을 극대화하고 예방 정비를 지원합니다.",
-  "techStack": ["Node.js", "MQTT", "InfluxDB", "Grafana", "Docker"],
-  "features": ["IoT 센서 데이터 실시간 수집", "이상 감지 알림 시스템", "설비 가동률 대시보드", "데이터 이력 리포트 생성"],
+  "thumbnail": "/projects/BN4QW8FL/thumbnail.svg",
+  "images": [
+    "/projects/BN4QW8FL/thumbnail.svg",
+    "/projects/BN4QW8FL/01.svg",
+    "/projects/BN4QW8FL/02.svg"
+  ],
+  "summary": "사출 공장 설비 이상감지 및 실시간 모니터링 웹 시스템",
+  "challenge": "경기도 소재 사출 공장에서 설비 고장을 작업자가 육안으로 발견하는 구조라, 발견 지연으로 인한 불량률과 라인 정지 시간이 문제였습니다. 기존 PLC 데이터를 활용할 수 있는 웹 기반 모니터링이 필요했습니다.",
+  "description": "공장 내 PLC·온습도 센서 데이터를 MQTT로 수집하여, 설비별 가동 상태·온도·진동 수치를 실시간 대시보드로 시각화했습니다. 임계값 초과 시 카카오 알림톡으로 관리자에게 즉시 통보되며, 일일/주간 리포트가 자동 생성됩니다.",
+  "techStack": [
+    "Node.js",
+    "MQTT",
+    "InfluxDB",
+    "Grafana",
+    "Docker",
+    "Kakao Alimtalk API"
+  ],
+  "features": [
+    "설비별 실시간 가동 상태 대시보드",
+    "임계값 초과 시 알림톡 자동 발송",
+    "일일/주간 설비 가동률 리포트",
+    "이상 이력 조회 및 패턴 분석"
+  ],
   "results": [
-    { "value": "35%↓", "label": "설비 다운타임 감소" },
-    { "value": "50만건", "label": "일 데이터 처리량" },
-    { "value": "60%↑", "label": "예방 정비 효율" }
+    {
+      "value": "28%↓",
+      "label": "비계획 정지 시간 감소"
+    },
+    {
+      "value": "32만건",
+      "label": "일 센서 데이터 처리"
+    },
+    {
+      "value": "12초",
+      "label": "이상 감지→알림 소요시간"
+    }
   ],
   "highlights": [
-    { "title": "실시간 처리", "description": "MQTT 기반 센서 데이터 밀리초 단위 수집" },
-    { "title": "확장 가능 아키텍처", "description": "센서 수 증가에 유연하게 대응하는 설계" }
+    {
+      "title": "레거시 연동",
+      "description": "기존 PLC 장비 교체 없이 MQTT 브릿지로 데이터 수집"
+    },
+    {
+      "title": "경량 아키텍처",
+      "description": "사내 서버 1대로 운영 가능한 Docker 기반 구성"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "스마트 팩토리 모니터링 시스템 - DUZZ",
-    "description": "IoT 기반 공장 모니터링 시스템 개발 사례",
-    "keywords": "스마트팩토리, IoT, 모니터링시스템"
+    "description": "제조 공장 설비 실시간 모니터링 시스템 구축 사례",
+    "keywords": "스마트팩토리, IoT모니터링, 설비관리"
   }
 }

@@ -8,27 +8,56 @@
   "year": "2023",
   "period": "2023.07 - 2023.11",
   "role": "풀스택 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "헬스장·필라테스 센터용 회원 및 수업 관리 앱",
-  "challenge": "수기 출석부와 전화 예약으로 수업 관리가 비효율적이고, 노쇼율이 높아 매출 손실이 발생하고 있었습니다.",
-  "description": "피트니스 센터의 회원 관리, 수업 예약, 출석 체크를 모바일로 처리할 수 있는 앱을 개발했습니다. 트레이너와 회원 양방향 소통 기능으로 운동 관리 경험을 향상시켰습니다.",
-  "techStack": ["React Native", "Supabase", "Expo", "Push Notification"],
-  "features": ["수업 시간표 및 예약", "QR 코드 출석 체크", "회원권 관리 및 결제", "트레이너-회원 메시지"],
+  "thumbnail": "/projects/UB9P1HXL/thumbnail.svg",
+  "images": [
+    "/projects/UB9P1HXL/thumbnail.svg",
+    "/projects/UB9P1HXL/01.svg",
+    "/projects/UB9P1HXL/02.svg"
+  ],
+  "summary": "필라테스·PT 전문 센터 3개 지점의 회원·수업·정산 통합 관리 앱",
+  "challenge": "강남·판교에 3개 지점을 운영하는 필라테스 센터에서, 회원 350명의 수업 예약을 카카오톡 단톡방으로 받고 있었습니다. 노쇼가 발생해도 대기자 연락이 늦어 빈 슬롯이 낭비되었고, 강사별 정산은 월말마다 엑셀로 수작업하면서 오류가 반복되었습니다.",
+  "description": "회원이 앱에서 수업을 예약하고, 센터에서는 출결·정산까지 한 번에 관리하는 앱을 개발했습니다. 수업 2시간 전 자동 확인 푸시로 노쇼를 줄이고, 노쇼 시 대기자에게 자동 알림이 발송됩니다. QR 출석 체크로 수기 관리를 제거하고, 강사별 수업 횟수가 자동 집계되어 정산 리포트로 출력됩니다.",
+  "techStack": [
+    "React Native",
+    "Supabase",
+    "Expo",
+    "Push Notification"
+  ],
+  "features": [
+    "수업 시간표 조회 및 실시간 예약/대기",
+    "QR 코드 기반 출석 체크",
+    "회원권 잔여 횟수·기간 관리",
+    "강사별 수업 정산 자동 리포트"
+  ],
   "results": [
-    { "value": "50%↑", "label": "수업 예약률 증가" },
-    { "value": "20%↓", "label": "노쇼율 감소" },
-    { "value": "40%↓", "label": "관리 업무 시간 절감" }
+    {
+      "value": "노쇼율 23%→8%",
+      "label": "자동 리마인드·대기자 전환"
+    },
+    {
+      "value": "월 12시간 절감",
+      "label": "정산 수작업 제거"
+    },
+    {
+      "value": "슬롯 가동률 +31%",
+      "label": "대기자 자동 충원 효과"
+    }
   ],
   "highlights": [
-    { "title": "QR 출석", "description": "QR 스캔으로 1초 만에 출석 처리 완료" },
-    { "title": "푸시 알림", "description": "수업 30분 전 자동 리마인드 발송" }
+    {
+      "title": "대기자 자동 전환",
+      "description": "노쇼·취소 시 대기 1순위에게 푸시 발송, 10분 내 미확인 시 다음 순위로 자동 이관"
+    },
+    {
+      "title": "정산 자동화",
+      "description": "강사별 수업 유형·횟수 집계 후 급여 정산표 PDF 자동 생성"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "피트니스 멤버십 관리 앱 - DUZZ",
-    "description": "헬스장 회원 관리 및 수업 예약 앱 개발",
+    "description": "필라테스·PT 센터 회원 예약·출결·정산 통합 관리 앱 개발 사례",
     "keywords": "피트니스앱, 회원관리, ReactNative"
   }
 }

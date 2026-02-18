@@ -8,27 +8,56 @@
   "year": "2024",
   "period": "2024.01 - 2024.04",
   "role": "앱 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "공인중개사를 위한 매물 등록·관리 모바일 앱",
-  "challenge": "공인중개사가 현장에서 매물 정보를 수기 기록 후 사무실에서 다시 입력하는 이중 작업이 발생하고 있었습니다.",
-  "description": "공인중개사가 현장에서 바로 매물을 촬영·등록하고 관리할 수 있는 모바일 앱을 개발했습니다. 매물 정보 자동 입력, 사진 편집, 고객 매칭 기능으로 업무 효율을 높였습니다.",
-  "techStack": ["React Native", "Firebase", "Cloud Storage", "Expo"],
-  "features": ["매물 촬영 및 즉시 등록", "매물 정보 자동 완성", "고객 매칭 알림", "계약 현황 관리"],
+  "thumbnail": "/projects/YC3E5MDG/thumbnail.svg",
+  "images": [
+    "/projects/YC3E5MDG/thumbnail.svg",
+    "/projects/YC3E5MDG/01.svg",
+    "/projects/YC3E5MDG/02.svg"
+  ],
+  "summary": "프롭테크 스타트업의 공인중개사 대상 매물 등록·고객 매칭 앱",
+  "challenge": "공인중개사들이 현장 방문 후 매물 정보를 종이에 메모하고, 사무실 돌아와서 네이버 부동산·직방에 하나씩 수작업 등록하고 있었습니다. 매물 30건 등록에 하루 2시간 이상 소요되고, 등기부등본 확인도 수동으로 진행하면서 기재 오류가 빈번했습니다.",
+  "description": "현장에서 매물 사진 촬영과 동시에 정보를 입력하고, 네이버 부동산·직방에 동시 배포할 수 있는 앱을 개발했습니다. OCR로 등기부등본을 스캔하면 소유자·면적·권리관계가 자동 입력됩니다. 매물 조건과 고객 희망 조건을 매칭하여 해당 고객에게 자동 알림을 보내는 기능도 구현했습니다.",
+  "techStack": [
+    "React Native",
+    "Firebase",
+    "Cloud Storage",
+    "Expo"
+  ],
+  "features": [
+    "현장 촬영·매물 정보 즉시 등록",
+    "OCR 등기부등본 자동 인식·입력",
+    "네이버 부동산·직방 동시 배포",
+    "고객 희망 조건-매물 자동 매칭 알림"
+  ],
   "results": [
-    { "value": "70%↓", "label": "매물 등록 시간 단축" },
-    { "value": "5,000건", "label": "누적 매물 등록" },
-    { "value": "4.6", "label": "앱스토어 평점" }
+    {
+      "value": "매물 등록 30분→5분",
+      "label": "건당 등록 시간 단축"
+    },
+    {
+      "value": "기재 오류 83%↓",
+      "label": "OCR 자동 입력 효과"
+    },
+    {
+      "value": "고객 계약 전환 +18%",
+      "label": "자동 매칭 알림 효과"
+    }
   ],
   "highlights": [
-    { "title": "오프라인 지원", "description": "네트워크 없이도 매물 임시 저장 후 동기화" },
-    { "title": "스마트 입력", "description": "OCR 기반 등기부등본 자동 인식" }
+    {
+      "title": "OCR 등기부 인식",
+      "description": "등기부등본 촬영 시 소유자·면적·근저당 등 핵심 정보 자동 추출"
+    },
+    {
+      "title": "멀티 플랫폼 배포",
+      "description": "한 번 입력으로 네이버 부동산·직방·자체 사이트 동시 등록"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "부동산 매물 관리 앱 개발 - DUZZ",
-    "description": "공인중개사용 매물 관리 모바일 앱 개발",
-    "keywords": "부동산앱, React Native, 매물관리"
+    "description": "공인중개사 매물 등록·고객 매칭 앱 개발 사례",
+    "keywords": "부동산앱, ReactNative, 매물관리"
   }
 }

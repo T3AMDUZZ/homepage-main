@@ -151,7 +151,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-14 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/20 text-xs">
-            &copy; 2025 DUZZ. (주)북극여우. All rights reserved.
+            &copy; 2026 DUZZ. (주)북극여우. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link to="/privacy" className="text-white/20 text-xs hover:text-white/40 transition-colors">개인정보처리방침</Link>

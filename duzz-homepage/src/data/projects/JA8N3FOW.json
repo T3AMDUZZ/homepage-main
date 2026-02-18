@@ -1,34 +1,64 @@
 {
   "id": "JA8N3FOW",
   "slug": "JA8N3FOW",
-  "title": "맛집 리뷰 모바일 서비스",
+  "title": "맛집 리뷰 커뮤니티 앱",
   "client": "비공개",
   "industry": "F&B/라이프스타일",
   "category": "app",
   "year": "2023",
   "period": "2023.04 - 2023.08",
   "role": "앱 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "위치 기반 맛집 추천 및 리뷰 모바일 서비스",
-  "challenge": "기존 맛집 앱들이 광고 위주로 운영되어, 신뢰할 수 있는 실사용자 리뷰 기반 추천 서비스에 대한 수요가 있었습니다.",
-  "description": "사용자 위치를 기반으로 주변 맛집을 추천하고 리뷰를 공유할 수 있는 모바일 앱을 개발했습니다. AI 기반 취향 분석으로 개인화된 맛집을 추천합니다.",
-  "techStack": ["Flutter", "Dart", "Firebase", "Google Maps API"],
-  "features": ["위치 기반 맛집 추천", "사진 리뷰 작성", "북마크 및 맛집 컬렉션", "친구 추천 공유"],
+  "thumbnail": "/projects/JA8N3FOW/thumbnail.svg",
+  "images": [
+    "/projects/JA8N3FOW/thumbnail.svg",
+    "/projects/JA8N3FOW/01.svg",
+    "/projects/JA8N3FOW/02.svg"
+  ],
+  "summary": "특정 지역(대전) 타겟 맛집 리뷰 커뮤니티 앱",
+  "challenge": "전국 단위 맛집 앱에서 대전 지역 정보가 부실하다는 로컬 수요가 있었습니다. 광고성 리뷰가 아닌 실사용자 인증 리뷰 기반의 지역 밀착형 서비스를 원했습니다.",
+  "description": "대전 지역에 특화된 맛집 리뷰 앱을 Flutter로 개발했습니다. 영수증 인증 리뷰 시스템으로 신뢰도를 확보하고, 동네별·메뉴별 필터와 지도 기반 탐색을 지원합니다. Firebase 기반으로 서버 비용을 최소화하면서도 실시간 피드를 구현했습니다.",
+  "techStack": [
+    "Flutter",
+    "Dart",
+    "Firebase",
+    "Google Maps API",
+    "Cloud Functions"
+  ],
+  "features": [
+    "영수증 인증 리뷰 시스템",
+    "동네별·메뉴별 필터 검색",
+    "지도 기반 주변 맛집 탐색",
+    "리뷰어 레벨 및 뱃지 시스템"
+  ],
   "results": [
-    { "value": "12,000건", "label": "누적 리뷰 수" },
-    { "value": "8,000+", "label": "앱 다운로드" },
-    { "value": "1,200명", "label": "일 활성 사용자" }
+    {
+      "value": "6,200건",
+      "label": "6개월 누적 리뷰"
+    },
+    {
+      "value": "3,800+",
+      "label": "앱 다운로드 (대전 지역)"
+    },
+    {
+      "value": "일 420명",
+      "label": "일 활성 사용자"
+    }
   ],
   "highlights": [
-    { "title": "빠른 앱 성능", "description": "Flutter로 iOS/Android 동시 지원, 네이티브급 성능" },
-    { "title": "AI 추천", "description": "사용자 리뷰 패턴 분석 기반 맞춤 추천" }
+    {
+      "title": "영수증 인증",
+      "description": "OCR 기반 영수증 자동 인식으로 방문 인증"
+    },
+    {
+      "title": "서버리스 운영",
+      "description": "Firebase로 월 서버 비용 2만원 이하 유지"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
-    "title": "맛집 리뷰 모바일 서비스 - DUZZ",
-    "description": "위치 기반 맛집 추천 앱 개발 사례",
-    "keywords": "맛집앱, Flutter, 위치기반서비스"
+    "title": "맛집 리뷰 커뮤니티 앱 - DUZZ",
+    "description": "지역 특화 맛집 리뷰 앱 개발 사례",
+    "keywords": "맛집앱, Flutter, 지역커뮤니티"
   }
 }

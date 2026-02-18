@@ -6,29 +6,59 @@
   "industry": "뷰티/화장품",
   "category": "ecommerce",
   "year": "2023",
-  "period": "2023.10 - 2024.02",
+  "period": "2023.08 - 2023.12",
   "role": "프론트엔드 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "화장품 브랜드 대상 통합 뷰티 커머스 플랫폼",
-  "challenge": "다수의 화장품 브랜드를 한곳에 모아 소비자에게 편리한 쇼핑 경험을 제공하고, 구독 모델로 안정적 매출을 만들 필요가 있었습니다.",
-  "description": "다수의 화장품 브랜드가 입점하여 판매하는 뷰티 커머스 플랫폼을 개발했습니다. 피부 타입별 추천, 리뷰 기반 랭킹, 구독 서비스 등 뷰티 특화 기능을 구현했습니다.",
-  "techStack": ["Next.js", "React Query", "Zustand", "Tailwind CSS", "Storybook"],
-  "features": ["피부 타입별 상품 추천", "리뷰 사진 갤러리", "정기 구독 결제", "브랜드별 스토어 페이지"],
+  "thumbnail": "/projects/ZE4T2YBQ/thumbnail.svg",
+  "images": [
+    "/projects/ZE4T2YBQ/thumbnail.svg",
+    "/projects/ZE4T2YBQ/01.svg",
+    "/projects/ZE4T2YBQ/02.svg"
+  ],
+  "summary": "국내 중소 화장품 브랜드 입점형 뷰티 버티컬 커머스",
+  "challenge": "올리브영·쿠팡에 입점하면 수수료 30~40%를 내야 하는 국내 중소 화장품 브랜드들이, 자체 판매 채널을 원하고 있었습니다. 개별 자사몰 운영은 마케팅 비용이 과다하여, 중소 브랜드끼리 모여 트래픽을 공유하는 버티컬 커머스 모델을 기획했습니다.",
+  "description": "중소 화장품 브랜드가 입점하여 자체 스토어를 운영하는 뷰티 버티컬 커머스를 개발했습니다. 피부 타입 퀴즈(건성·지성·민감성·복합성)를 통해 맞춤 상품을 추천하고, 리뷰 사진·성분 분석 기반 랭킹 시스템으로 구매 결정을 돕습니다. 월 정기 구독 박스(스킨케어 루틴)로 반복 매출 구조를 만들었습니다.",
+  "techStack": [
+    "Next.js",
+    "React Query",
+    "Zustand",
+    "Tailwind CSS",
+    "Storybook"
+  ],
+  "features": [
+    "피부 타입 퀴즈 기반 맞춤 추천",
+    "성분 분석·리뷰 사진 기반 상품 랭킹",
+    "월 정기 구독 박스 (스킨케어 루틴)",
+    "브랜드별 입점 스토어 페이지"
+  ],
   "results": [
-    { "value": "50+", "label": "입점 브랜드 수" },
-    { "value": "8.5%", "label": "구독 전환율" },
-    { "value": "1억+", "label": "월 거래액" }
+    {
+      "value": "입점 브랜드 53개",
+      "label": "런칭 4개월 기준"
+    },
+    {
+      "value": "구독 전환율 8.5%",
+      "label": "퀴즈 완료 고객 기준"
+    },
+    {
+      "value": "구독 유지율 72%",
+      "label": "3개월 이상 연속 구독"
+    }
   ],
   "highlights": [
-    { "title": "개인화 추천", "description": "피부 분석 퀴즈 기반 맞춤 상품 큐레이션" },
-    { "title": "컴포넌트 시스템", "description": "Storybook으로 디자인 시스템 표준화" }
+    {
+      "title": "피부 타입 큐레이션",
+      "description": "8문항 퀴즈로 피부 타입 분석 후 루틴별 상품 조합 자동 추천"
+    },
+    {
+      "title": "디자인 시스템",
+      "description": "Storybook 기반 50개+ 컴포넌트 라이브러리로 브랜드 스토어 일관성 확보"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "뷰티 커머스 플랫폼 개발 - DUZZ",
-    "description": "화장품 뷰티 커머스 플랫폼 개발 사례",
+    "description": "중소 화장품 브랜드 입점형 뷰티 커머스 플랫폼 개발 사례",
     "keywords": "뷰티커머스, 이커머스, Next.js"
   }
 }

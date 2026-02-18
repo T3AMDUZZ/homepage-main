@@ -8,27 +8,56 @@
   "year": "2024",
   "period": "2024.04 - 2024.06",
   "role": "디자인 & 프론트엔드",
-  "thumbnail": null,
-  "images": [],
-  "summary": "프리미엄 카페 프랜차이즈의 브랜드 아이덴티티 웹사이트",
-  "challenge": "가맹점 모집을 위한 온라인 채널이 없어, 브랜드 인지도와 가맹 문의가 정체되어 있었습니다.",
-  "description": "프리미엄 카페 프랜차이즈의 브랜드 가치를 전달하는 웹사이트를 기획·디자인·개발했습니다. 시각적 스토리텔링과 부드러운 스크롤 애니메이션으로 브랜드 경험을 극대화했습니다.",
-  "techStack": ["React", "Framer Motion", "GSAP", "Tailwind CSS"],
-  "features": ["풀페이지 스크롤 인터랙션", "매장 찾기 지도 연동", "메뉴 소개 갤러리", "가맹 문의 폼"],
+  "thumbnail": "/projects/WF6H4BTJ/thumbnail.svg",
+  "images": [
+    "/projects/WF6H4BTJ/thumbnail.svg",
+    "/projects/WF6H4BTJ/01.svg",
+    "/projects/WF6H4BTJ/02.svg"
+  ],
+  "summary": "가맹점 120개 스페셜티 카페 프랜차이즈의 가맹 모집 특화 브랜드 사이트",
+  "challenge": "가맹점 120개 규모의 스페셜티 카페 프랜차이즈가 가맹 박람회 참가 위주로 가맹점을 모집해왔으나, 박람회당 비용 대비 실제 계약 전환율이 낮아 온라인 채널이 필요했습니다. 기존 사이트는 메뉴 사진 나열 수준으로, 예비 가맹점주에게 수익 모델과 본사 지원 체계를 전달하지 못하고 있었습니다.",
+  "description": "브랜드 스토리부터 수익 모델, 창업 절차, 인테리어 시공 사례까지 예비 가맹점주가 궁금해하는 정보를 단계별로 보여주는 브랜드 사이트를 제작했습니다. GSAP ScrollTrigger 기반 시네마틱 스크롤로 원두 산지→로스팅→매장 경험까지 브랜드 여정을 전달하고, 하단에 가맹 상담 신청 폼을 배치하여 전환을 유도했습니다.",
+  "techStack": [
+    "React",
+    "Framer Motion",
+    "GSAP",
+    "Tailwind CSS"
+  ],
+  "features": [
+    "풀페이지 시네마틱 스크롤 (브랜드 스토리)",
+    "가맹 수익 시뮬레이션 계산기",
+    "전국 매장 찾기 지도 연동",
+    "가맹 상담 신청 폼 + 자료 다운로드"
+  ],
   "results": [
-    { "value": "32%↑", "label": "브랜드 인지도 상승" },
-    { "value": "40건+", "label": "월 가맹 문의" },
-    { "value": "3분 30초", "label": "평균 체류 시간" }
+    {
+      "value": "월 47건",
+      "label": "온라인 가맹 상담 신청"
+    },
+    {
+      "value": "체류 시간 3분 42초",
+      "label": "업종 평균 대비 2.1배"
+    },
+    {
+      "value": "박람회 비용 40%↓",
+      "label": "온라인 전환으로 오프라인 축소"
+    }
   ],
   "highlights": [
-    { "title": "몰입감 있는 UX", "description": "GSAP ScrollTrigger 기반 시네마틱 연출" },
-    { "title": "브랜드 일관성", "description": "디자인 시스템으로 전 페이지 톤앤매너 통일" }
+    {
+      "title": "수익 시뮬레이터",
+      "description": "상권·평수·좌석수 입력 시 예상 월 매출·순이익 자동 산출"
+    },
+    {
+      "title": "시네마틱 연출",
+      "description": "GSAP ScrollTrigger로 원두 산지부터 매장까지 브랜드 여정 몰입 경험"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "카페 프랜차이즈 브랜드 사이트 - DUZZ",
-    "description": "프리미엄 카페 브랜딩 웹사이트 제작 사례",
+    "description": "카페 프랜차이즈 가맹 모집 특화 브랜드 사이트 제작 사례",
     "keywords": "브랜드사이트, 카페홈페이지, 인터랙션"
   }
 }

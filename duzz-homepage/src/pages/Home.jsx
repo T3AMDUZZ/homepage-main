@@ -23,7 +23,7 @@ const fadeUp = {
 }
 
 const stats = [
-  { num: '20+', label: '완료 프로젝트' },
+  { num: '40+', label: '완료 프로젝트' },
   { num: '15+', label: '협력 기업' },
   { num: '7년+', label: '평균 경력' },
   { num: '98%', label: '고객 만족도' },
@@ -145,7 +145,7 @@ function HeroVisual() {
         className="absolute -top-5 -right-4 bg-white/[0.07] border border-white/10 rounded-xl px-4 py-3 backdrop-blur-sm"
       >
         <p className="text-[10px] text-white/30 mb-1">누적 프로젝트</p>
-        <p className="text-lg font-bold text-white/90">20<span className="text-highlight-light">+</span></p>
+        <p className="text-lg font-bold text-white/90">40<span className="text-highlight-light">+</span></p>
       </motion.div>
 
       {/* 좌하단 플로팅 — 고객 만족도 */}
@@ -230,6 +230,20 @@ export default function Home() {
                 <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{s.num}</div>
                 <div className="text-sm text-accent">{s.label}</div>
               </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 협업 업체 */}
+      <section className="py-12 bg-white">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8">
+          <p className="text-xs text-center text-accent/50 tracking-wider mb-8">함께한 기업</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-14 gap-y-6">
+            {['블루모션', '(주)이첸이엔씨', 'TurnUp'].map((name) => (
+              <span key={name} className="text-lg md:text-xl font-bold text-gray-300 hover:text-gray-500 transition-colors">
+                {name}
+              </span>
             ))}
           </div>
         </div>

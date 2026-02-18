@@ -8,27 +8,57 @@
   "year": "2023",
   "period": "2023.08 - 2023.12",
   "role": "프론트엔드 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "국내 숙소·액티비티 통합 예약 웹 플랫폼",
-  "challenge": "숙소와 액티비티를 각각 다른 사이트에서 검색해야 하는 불편함으로 고객 이탈이 높았습니다.",
-  "description": "국내 여행 숙소와 액티비티를 한곳에서 검색하고 예약할 수 있는 플랫폼을 개발했습니다. 지도 기반 검색, 실시간 가격 비교, 리뷰 시스템 등 핵심 기능을 구현했습니다.",
-  "techStack": ["React", "Redux Toolkit", "Kakao Map API", "Tailwind CSS"],
-  "features": ["지도 기반 숙소 검색", "실시간 가격 비교", "리뷰 및 평점 시스템", "예약 내역 관리"],
+  "thumbnail": "/projects/T9RJ6VHS/thumbnail.svg",
+  "images": [
+    "/projects/T9RJ6VHS/thumbnail.svg",
+    "/projects/T9RJ6VHS/01.svg",
+    "/projects/T9RJ6VHS/02.svg"
+  ],
+  "summary": "제주·강원 특화 펜션·액티비티 통합 예약 플랫폼",
+  "challenge": "제주·강원 지역 소형 펜션과 액티비티 업체들이 네이버·여기어때 수수료 부담을 줄이기 위해, 자체 예약 플랫폼을 만들고자 했습니다. 숙소와 액티비티를 묶어서 패키지로 판매하는 기능이 핵심이었습니다.",
+  "description": "제주·강원 지역 펜션과 액티비티를 한 곳에서 검색하고, 숙소+체험 패키지로 예약할 수 있는 웹 플랫폼을 개발했습니다. 카카오맵 연동 지도 검색, 실시간 잔여 객실 표시, 쿠폰 시스템을 구현했습니다.",
+  "techStack": [
+    "React",
+    "Redux Toolkit",
+    "Kakao Map API",
+    "Tailwind CSS",
+    "Next.js"
+  ],
+  "features": [
+    "지도 기반 숙소·액티비티 통합 검색",
+    "숙소+체험 패키지 예약",
+    "실시간 잔여 객실·좌석 표시",
+    "쿠폰·할인 코드 시스템"
+  ],
   "results": [
-    { "value": "15,000명", "label": "월 활성 사용자" },
-    { "value": "6.8%", "label": "예약 전환율" },
-    { "value": "4분+", "label": "평균 체류 시간" }
+    {
+      "value": "8,400명",
+      "label": "런칭 4개월 월 방문자"
+    },
+    {
+      "value": "5.2%",
+      "label": "예약 전환율"
+    },
+    {
+      "value": "패키지 평균 객단가 +34%",
+      "label": "단품 대비 객단가 상승"
+    }
   ],
   "highlights": [
-    { "title": "직관적 지도 검색", "description": "Kakao Map 연동 클러스터링 마커 구현" },
-    { "title": "빠른 검색 결과", "description": "디바운싱과 캐싱으로 검색 UX 최적화" }
+    {
+      "title": "패키지 번들링",
+      "description": "숙소+액티비티 묶음 할인 자동 계산 로직"
+    },
+    {
+      "title": "지도 클러스터링",
+      "description": "카카오맵 커스텀 마커로 지역별 숙소 밀집도 표현"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "여행 예약 플랫폼 개발 - DUZZ",
-    "description": "국내 여행 숙소 예약 웹 플랫폼 개발 사례",
-    "keywords": "여행플랫폼, 예약시스템, React"
+    "description": "국내 여행 숙소·액티비티 통합 예약 플랫폼 개발 사례",
+    "keywords": "여행플랫폼, 예약시스템, 패키지예약"
   }
 }

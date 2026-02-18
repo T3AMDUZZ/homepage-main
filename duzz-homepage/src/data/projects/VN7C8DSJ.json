@@ -5,30 +5,59 @@
   "client": "비공개",
   "industry": "호텔/숙박",
   "category": "app",
-  "year": "2024",
-  "period": "2024.03 - 2024.06",
+  "year": "2025",
+  "period": "2025.01 - 2025.04",
   "role": "앱 개발",
-  "thumbnail": null,
-  "images": [],
-  "summary": "호텔 체인 대상 객실 예약 및 모바일 체크인 앱",
-  "challenge": "프런트 데스크 체크인 대기 시간이 길어 고객 불만이 높고, 별도 예약 시스템이 없어 OTA 수수료 부담이 컸습니다.",
-  "description": "호텔 체인의 객실 예약부터 모바일 체크인까지 지원하는 앱을 개발했습니다. 디지털 키 기능으로 프런트 데스크 방문 없이 바로 객실 입실이 가능합니다.",
-  "techStack": ["React Native", "Node.js", "MongoDB", "BLE SDK"],
-  "features": ["실시간 객실 조회 및 예약", "모바일 체크인/체크아웃", "디지털 키 (BLE)", "룸서비스 주문"],
+  "thumbnail": "/projects/VN7C8DSJ/thumbnail.svg",
+  "images": [
+    "/projects/VN7C8DSJ/thumbnail.svg",
+    "/projects/VN7C8DSJ/01.svg",
+    "/projects/VN7C8DSJ/02.svg"
+  ],
+  "summary": "국내 중소 호텔 체인 5개 지점의 자체 예약·모바일 체크인 앱",
+  "challenge": "서울·부산에 5개 지점을 운영하는 비즈니스 호텔 체인이 야놀자·여기어때 OTA 수수료(15~18%)를 줄이기 위해 자체 예약 채널이 필요했습니다. 또한 심야 시간대 프런트 인력 1명 운영으로 체크인 대기가 평균 8분까지 늘어나 투숙객 불만이 반복되고 있었습니다.",
+  "description": "호텔 자체 앱으로 객실 조회부터 결제, 모바일 체크인까지 원스톱으로 처리할 수 있는 앱을 개발했습니다. BLE 기반 디지털 키로 프런트 방문 없이 객실 입실이 가능하고, 기존 PMS(프로퍼티 관리 시스템)와 API 연동하여 객실 상태가 실시간 동기화됩니다. 룸서비스·어메니티 추가 요청도 앱 내에서 처리됩니다.",
+  "techStack": [
+    "React Native",
+    "Node.js",
+    "MongoDB",
+    "BLE SDK"
+  ],
+  "features": [
+    "실시간 객실 조회 및 자체 예약·결제",
+    "모바일 체크인/체크아웃 (프런트 무인화)",
+    "BLE 디지털 키 (도어락 연동)",
+    "인앱 룸서비스·컨시어지 요청"
+  ],
   "results": [
-    { "value": "42%", "label": "모바일 체크인 이용률" },
-    { "value": "75%↓", "label": "프런트 대기 시간 감소" },
-    { "value": "4.7", "label": "앱 만족도 (5점)" }
+    {
+      "value": "OTA 의존 62%→35%",
+      "label": "자체 예약 비중 확대"
+    },
+    {
+      "value": "체크인 대기 8분→0분",
+      "label": "모바일 체크인 이용 시"
+    },
+    {
+      "value": "투숙객 만족도 4.7/5.0",
+      "label": "앱 이용 고객 기준"
+    }
   ],
   "highlights": [
-    { "title": "디지털 키", "description": "BLE 기술로 스마트폰이 곧 객실 키" },
-    { "title": "오프라인 대응", "description": "네트워크 불안정 시에도 키 기능 정상 작동" }
+    {
+      "title": "BLE 디지털 키",
+      "description": "기존 도어락 교체 없이 BLE 모듈 추가 방식으로 도입 비용 최소화"
+    },
+    {
+      "title": "PMS 연동",
+      "description": "기존 호텔 관리 시스템과 양방향 API 연동, 객실 상태·요금 실시간 동기화"
+    }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
     "title": "호텔 객실 예약 앱 개발 - DUZZ",
-    "description": "호텔 모바일 체크인 및 예약 앱 개발",
+    "description": "호텔 자체 예약·모바일 체크인·디지털 키 앱 개발 사례",
     "keywords": "호텔앱, 모바일체크인, ReactNative"
   }
 }
