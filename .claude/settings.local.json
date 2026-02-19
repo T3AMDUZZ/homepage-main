@@ -7,7 +7,14 @@
       "Bash(npx vite build)",
       "mcp__ide__getDiagnostics",
       "Bash(echo:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(cd:*)",
+      "Bash(dir:*)",
+      "Bash(gh run:*)"
     ]
   }
 }
