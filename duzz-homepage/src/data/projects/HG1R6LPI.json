@@ -8,11 +8,11 @@
   "year": "2024",
   "period": "2024.02 - 2024.06",
   "role": "풀스택 개발",
-  "thumbnail": "/projects/HG1R6LPI/thumbnail.svg",
+  "thumbnail": "/projects/HG1R6LPI/thumbnail.webp",
   "images": [
-    "/projects/HG1R6LPI/thumbnail.svg",
-    "/projects/HG1R6LPI/01.svg",
-    "/projects/HG1R6LPI/02.svg"
+    "/projects/HG1R6LPI/thumbnail.webp",
+    "/projects/HG1R6LPI/01.webp",
+    "/projects/HG1R6LPI/02.webp"
   ],
   "summary": "직원 50인 규모 제조업체 맞춤형 그룹웨어",
   "challenge": "카카오톡과 이메일에 분산된 업무 소통으로 결재 문서가 유실되거나 지연되는 일이 잦았습니다. 상용 그룹웨어는 불필요한 기능이 많고 월 비용이 부담된다는 것이 클라이언트의 요구사항이었습니다.",

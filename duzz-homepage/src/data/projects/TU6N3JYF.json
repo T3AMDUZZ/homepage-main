@@ -8,11 +8,11 @@
   "year": "2026",
   "period": "2025.12 - 진행중",
   "role": "시스템 개발 및 API 연동",
-  "thumbnail": "/projects/TU6N3JYF/thumbnail.svg",
+  "thumbnail": "/projects/TU6N3JYF/thumbnail.webp",
   "images": [
-    "/projects/TU6N3JYF/thumbnail.svg",
-    "/projects/TU6N3JYF/01.svg",
-    "/projects/TU6N3JYF/02.svg"
+    "/projects/TU6N3JYF/thumbnail.webp",
+    "/projects/TU6N3JYF/01.webp",
+    "/projects/TU6N3JYF/02.webp"
   ],
   "summary": "비즈니스 자동화를 위한 시스템 구축 및 메시징 연동",
   "challenge": "수동으로 고객 알림을 보내고 있어 운영 인력이 과다하게 투입되고, 발송 누락이 빈번하게 발생하고 있었습니다.",

@@ -8,11 +8,11 @@
   "year": "2025",
   "period": "2025.03 - 2025.07",
   "role": "백엔드 개발",
-  "thumbnail": "/projects/BN4QW8FL/thumbnail.svg",
+  "thumbnail": "/projects/BN4QW8FL/thumbnail.webp",
   "images": [
-    "/projects/BN4QW8FL/thumbnail.svg",
-    "/projects/BN4QW8FL/01.svg",
-    "/projects/BN4QW8FL/02.svg"
+    "/projects/BN4QW8FL/thumbnail.webp",
+    "/projects/BN4QW8FL/01.webp",
+    "/projects/BN4QW8FL/02.webp"
   ],
   "summary": "사출 공장 설비 이상감지 및 실시간 모니터링 웹 시스템",
   "challenge": "경기도 소재 사출 공장에서 설비 고장을 작업자가 육안으로 발견하는 구조라, 발견 지연으로 인한 불량률과 라인 정지 시간이 문제였습니다. 기존 PLC 데이터를 활용할 수 있는 웹 기반 모니터링이 필요했습니다.",

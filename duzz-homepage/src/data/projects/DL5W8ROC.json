@@ -8,11 +8,11 @@
   "year": "2025",
   "period": "2025.06 - 2025.08",
   "role": "프론트엔드 개발",
-  "thumbnail": "/projects/DL5W8ROC/thumbnail.svg",
+  "thumbnail": "/projects/DL5W8ROC/thumbnail.webp",
   "images": [
-    "/projects/DL5W8ROC/thumbnail.svg",
-    "/projects/DL5W8ROC/01.svg",
-    "/projects/DL5W8ROC/02.svg"
+    "/projects/DL5W8ROC/thumbnail.webp",
+    "/projects/DL5W8ROC/01.webp",
+    "/projects/DL5W8ROC/02.webp"
   ],
   "summary": "온라인 매거진 운영사의 기사 발행·관리 전용 CMS",
   "challenge": "워드프레스로 운영하던 매거진이 커스텀 레이아웃 한계와 느린 속도 문제로 이탈률이 높았습니다. 에디터 팀이 코드 없이 다양한 형태의 기사를 발행할 수 있는 자체 CMS가 필요했습니다.",

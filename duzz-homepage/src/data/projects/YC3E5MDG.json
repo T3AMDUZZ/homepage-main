@@ -8,11 +8,11 @@
   "year": "2024",
   "period": "2024.01 - 2024.04",
   "role": "앱 개발",
-  "thumbnail": "/projects/YC3E5MDG/thumbnail.svg",
+  "thumbnail": "/projects/YC3E5MDG/thumbnail.webp",
   "images": [
-    "/projects/YC3E5MDG/thumbnail.svg",
-    "/projects/YC3E5MDG/01.svg",
-    "/projects/YC3E5MDG/02.svg"
+    "/projects/YC3E5MDG/thumbnail.webp",
+    "/projects/YC3E5MDG/01.webp",
+    "/projects/YC3E5MDG/02.webp"
   ],
   "summary": "프롭테크 스타트업의 공인중개사 대상 매물 등록·고객 매칭 앱",
   "challenge": "공인중개사들이 현장 방문 후 매물 정보를 종이에 메모하고, 사무실 돌아와서 네이버 부동산·직방에 하나씩 수작업 등록하고 있었습니다. 매물 30건 등록에 하루 2시간 이상 소요되고, 등기부등본 확인도 수동으로 진행하면서 기재 오류가 빈번했습니다.",

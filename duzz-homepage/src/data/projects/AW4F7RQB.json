@@ -8,11 +8,11 @@
   "year": "2023",
   "period": "2023.05 - 2023.07",
   "role": "풀스택 개발",
-  "thumbnail": "/projects/AW4F7RQB/thumbnail.svg",
+  "thumbnail": "/projects/AW4F7RQB/thumbnail.webp",
   "images": [
-    "/projects/AW4F7RQB/thumbnail.svg",
-    "/projects/AW4F7RQB/01.svg",
-    "/projects/AW4F7RQB/02.svg"
+    "/projects/AW4F7RQB/thumbnail.webp",
+    "/projects/AW4F7RQB/01.webp",
+    "/projects/AW4F7RQB/02.webp"
   ],
   "summary": "지역 플로리스트 연결형 당일배송 꽃배달 커머스",
   "challenge": "기존에 네이버 스마트스토어로만 운영하던 꽃배달 업체가, 당일배송·정기구독 등 자체 기능이 필요해져 독립 플랫폼 구축을 의뢰했습니다. 배송 권역별로 가맹 플로리스트에게 자동 배정하는 로직이 핵심 요구사항이었습니다.",

@@ -8,11 +8,11 @@
   "year": "2026",
   "period": "2025.11 - 2026.01",
   "role": "개발 참여",
-  "thumbnail": "/projects/EP2R8XAC/thumbnail.svg",
+  "thumbnail": "/projects/EP2R8XAC/thumbnail.webp",
   "images": [
-    "/projects/EP2R8XAC/thumbnail.svg",
-    "/projects/EP2R8XAC/01.svg",
-    "/projects/EP2R8XAC/02.svg"
+    "/projects/EP2R8XAC/thumbnail.webp",
+    "/projects/EP2R8XAC/01.webp",
+    "/projects/EP2R8XAC/02.webp"
   ],
   "summary": "기업 브랜딩을 위한 반응형 홍보 웹사이트",
   "challenge": "기존 홈페이지가 노후화되어 모바일 대응이 안 되고, 기업의 전문성을 제대로 전달하지 못하고 있었습니다.",

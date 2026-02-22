@@ -8,11 +8,11 @@
   "year": "2024",
   "period": "2024.03 - 2024.07",
   "role": "백엔드 & 프론트엔드",
-  "thumbnail": "/projects/QD2S7UCX/thumbnail.svg",
+  "thumbnail": "/projects/QD2S7UCX/thumbnail.webp",
   "images": [
-    "/projects/QD2S7UCX/thumbnail.svg",
-    "/projects/QD2S7UCX/01.svg",
-    "/projects/QD2S7UCX/02.svg"
+    "/projects/QD2S7UCX/thumbnail.webp",
+    "/projects/QD2S7UCX/01.webp",
+    "/projects/QD2S7UCX/02.webp"
   ],
   "summary": "3PL 물류업체의 입출고·재고·배송 통합 관리 시스템",
   "challenge": "엑셀 17개 시트로 재고를 관리하던 3PL 업체가, 화주사가 늘어나면서 실시간 재고 파악이 불가능해졌습니다. 출고 오류율 12%가 거래처 이탈의 직접 원인이 되고 있었습니다.",

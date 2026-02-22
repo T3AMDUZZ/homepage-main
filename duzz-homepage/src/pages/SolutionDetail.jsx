@@ -70,6 +70,7 @@ function SolutionDetail() {
   const gradient = categoryGradient[project.category] || 'from-gray-100 to-gray-200'
   const badgeColor = categoryColor[project.category] || 'bg-gray-50 text-gray-700 border-gray-100'
   const hasImages = project.images && project.images.length > 0
+  const isConfidential = project.client === '비공개'
 
   return (
     <div className="min-h-screen bg-white">
@@ -133,15 +134,21 @@ function SolutionDetail() {
           {/* Hero 이미지 */}
           <motion.div
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.15 }}
-            className="w-full aspect-video rounded-2xl overflow-hidden bg-[#F7F3FB] shadow-sm"
+            className="relative w-full aspect-video rounded-2xl overflow-hidden bg-[#F7F3FB] shadow-sm"
           >
             {hasImages ? (
-              <img
-                src={project.images[0]}
-                alt={project.title}
-                className="w-full h-full object-contain"
-                onError={(e) => { e.target.style.display = 'none' }}
-              />
+              <>
+                <img
+                  src={project.images[0]}
+                  alt={project.title}
+                  decoding="async"
+                  className={`w-full h-full object-contain${isConfidential ? ' blur-[6px]' : ''}`}
+                  onError={(e) => { e.target.style.display = 'none' }}
+                />
+                {isConfidential && (
+                  <div className="absolute inset-0 bg-white/40" />
+                )}
+              </>
             ) : (
               <div className="w-full h-full flex items-center justify-center">
                 <div className="text-center">
@@ -284,13 +291,18 @@ function SolutionDetail() {
           <h2 className="text-2xl font-bold mb-6 text-gray-900">상세 이미지</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {project.images.slice(1).map((image, index) => (
-              <div key={index} className="w-full aspect-video rounded-xl overflow-hidden bg-[#F7F3FB]">
+              <div key={index} className="relative w-full aspect-video rounded-xl overflow-hidden bg-[#F7F3FB]">
                 <img
                   src={image}
                   alt={`${project.title} ${index + 2}`}
-                  className="w-full h-full object-contain"
+                  loading="lazy"
+                  decoding="async"
+                  className={`w-full h-full object-contain${isConfidential ? ' blur-[6px]' : ''}`}
                   onError={(e) => { e.target.style.display = 'none' }}
                 />
+                {isConfidential && (
+                  <div className="absolute inset-0 bg-white/40" />
+                )}
               </div>
             ))}
           </div>

@@ -8,11 +8,11 @@
   "year": "2025",
   "period": "2025.05 - 2025.09",
   "role": "프론트엔드 개발",
-  "thumbnail": "/projects/MK5V9GZE/thumbnail.svg",
+  "thumbnail": "/projects/MK5V9GZE/thumbnail.webp",
   "images": [
-    "/projects/MK5V9GZE/thumbnail.svg",
-    "/projects/MK5V9GZE/01.svg",
-    "/projects/MK5V9GZE/02.svg"
+    "/projects/MK5V9GZE/thumbnail.webp",
+    "/projects/MK5V9GZE/01.webp",
+    "/projects/MK5V9GZE/02.webp"
   ],
   "summary": "직무교육 전문업체의 라이브 강의·VOD 통합 LMS",
   "challenge": "Zoom + 구글 드라이브 조합으로 운영하던 직무교육 업체가, 수강생 관리와 수료증 발급이 수작업이라 교육 과정이 늘수록 운영이 마비되는 상황이었습니다.",

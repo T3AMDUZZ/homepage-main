@@ -8,11 +8,11 @@
   "year": "2025",
   "period": "2025.09 - 2025.12",
   "role": "풀스택 개발",
-  "thumbnail": "/projects/X7KM2P9A/thumbnail.svg",
+  "thumbnail": "/projects/X7KM2P9A/thumbnail.webp",
   "images": [
-    "/projects/X7KM2P9A/thumbnail.svg",
-    "/projects/X7KM2P9A/01.svg",
-    "/projects/X7KM2P9A/02.svg"
+    "/projects/X7KM2P9A/thumbnail.webp",
+    "/projects/X7KM2P9A/01.webp",
+    "/projects/X7KM2P9A/02.webp"
   ],
   "summary": "오프라인 중심 여성복 브랜드의 D2C 자사몰 구축",
   "challenge": "백화점·편집숍 입점 위주로 운영하던 여성복 브랜드가, 플랫폼 수수료(25~35%)와 고객 데이터 미확보 문제를 해결하기 위해 D2C 자사몰 전환을 결정했습니다. 무신사·W컨셉 등 외부 채널 매출 비중이 78%로, 자체 고객 DB가 거의 없는 상태에서 출발했습니다.",

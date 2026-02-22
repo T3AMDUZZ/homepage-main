@@ -8,11 +8,11 @@
   "year": "2023",
   "period": "2023.04 - 2023.08",
   "role": "앱 개발",
-  "thumbnail": "/projects/JA8N3FOW/thumbnail.svg",
+  "thumbnail": "/projects/JA8N3FOW/thumbnail.webp",
   "images": [
-    "/projects/JA8N3FOW/thumbnail.svg",
-    "/projects/JA8N3FOW/01.svg",
-    "/projects/JA8N3FOW/02.svg"
+    "/projects/JA8N3FOW/thumbnail.webp",
+    "/projects/JA8N3FOW/01.webp",
+    "/projects/JA8N3FOW/02.webp"
   ],
   "summary": "특정 지역(대전) 타겟 맛집 리뷰 커뮤니티 앱",
   "challenge": "전국 단위 맛집 앱에서 대전 지역 정보가 부실하다는 로컬 수요가 있었습니다. 광고성 리뷰가 아닌 실사용자 인증 리뷰 기반의 지역 밀착형 서비스를 원했습니다.",
