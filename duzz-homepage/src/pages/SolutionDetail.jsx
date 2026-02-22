@@ -133,13 +133,13 @@ function SolutionDetail() {
           {/* Hero 이미지 */}
           <motion.div
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.15 }}
-            className={`w-full aspect-video rounded-2xl overflow-hidden bg-gradient-to-br ${gradient} shadow-sm`}
+            className="w-full aspect-video rounded-2xl overflow-hidden bg-[#F7F3FB] shadow-sm"
           >
             {hasImages ? (
               <img
                 src={project.images[0]}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 onError={(e) => { e.target.style.display = 'none' }}
               />
             ) : (
@@ -284,11 +284,11 @@ function SolutionDetail() {
           <h2 className="text-2xl font-bold mb-6 text-gray-900">상세 이미지</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {project.images.slice(1).map((image, index) => (
-              <div key={index} className={`w-full aspect-video rounded-xl overflow-hidden bg-gradient-to-br ${gradient}`}>
+              <div key={index} className="w-full aspect-video rounded-xl overflow-hidden bg-[#F7F3FB]">
                 <img
                   src={image}
                   alt={`${project.title} ${index + 2}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   onError={(e) => { e.target.style.display = 'none' }}
                 />
               </div>

@@ -6,6 +6,7 @@ const projectFiles = import.meta.glob('./projects/*.json', { eager: true })
 
 export const projects = Object.values(projectFiles)
   .map((mod) => mod.default)
+  .filter((p) => !p.private)
   .sort((a, b) => {
     // 공개 프로젝트(client가 '비공개'가 아닌)를 먼저, 나머지는 year 내림차순
     const aReal = a.client !== '비공개' ? 0 : 1

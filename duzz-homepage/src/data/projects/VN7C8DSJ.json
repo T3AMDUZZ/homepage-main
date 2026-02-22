@@ -1,9 +1,10 @@
 {
+  "private": true,
   "id": "VN7C8DSJ",
   "slug": "VN7C8DSJ",
-  "title": "호텔 객실 예약 앱",
+  "title": "StayEase - Hotel Booking App",
   "client": "비공개",
-  "industry": "호텔/숙박",
+  "industry": "Hospitality/Travel",
   "category": "app",
   "year": "2025",
   "period": "2025.01 - 2025.04",
@@ -14,50 +15,53 @@
     "/projects/VN7C8DSJ/01.svg",
     "/projects/VN7C8DSJ/02.svg"
   ],
-  "summary": "국내 중소 호텔 체인 5개 지점의 자체 예약·모바일 체크인 앱",
-  "challenge": "서울·부산에 5개 지점을 운영하는 비즈니스 호텔 체인이 야놀자·여기어때 OTA 수수료(15~18%)를 줄이기 위해 자체 예약 채널이 필요했습니다. 또한 심야 시간대 프런트 인력 1명 운영으로 체크인 대기가 평균 8분까지 늘어나 투숙객 불만이 반복되고 있었습니다.",
-  "description": "호텔 자체 앱으로 객실 조회부터 결제, 모바일 체크인까지 원스톱으로 처리할 수 있는 앱을 개발했습니다. BLE 기반 디지털 키로 프런트 방문 없이 객실 입실이 가능하고, 기존 PMS(프로퍼티 관리 시스템)와 API 연동하여 객실 상태가 실시간 동기화됩니다. 룸서비스·어메니티 추가 요청도 앱 내에서 처리됩니다.",
+  "summary": "동남아시아 12개 도시 부티크 호텔 체인의 글로벌 예약·모바일 체크인 앱",
+  "challenge": "싱가포르 본사를 둔 부티크 호텔 체인 StayEase가 동남아 12개 도시 23개 지점으로 확장하면서, Booking.com·Agoda 등 OTA 수수료(18~22%)가 연간 수익을 크게 압박하고 있었습니다. 또한 다국적 투숙객의 언어 장벽과 심야 체크인 대기 문제로 글로벌 리뷰 평점이 하락하는 상황이었습니다.",
+  "description": "StayEase 자체 앱으로 전 세계 어디서든 객실 조회부터 결제, 모바일 체크인까지 원스톱으로 처리할 수 있는 앱을 개발했습니다. 영어·중국어·일본어·태국어·베트남어 5개 언어를 지원하며, NFC 기반 디지털 키로 프런트 방문 없이 객실 입실이 가능합니다. 글로벌 PMS인 Opera Cloud와 API 연동하여 전 지점 객실 상태가 실시간 동기화되며, Stripe 결제 연동으로 40개국 이상의 통화를 지원합니다.",
   "techStack": [
     "React Native",
     "Node.js",
     "MongoDB",
-    "BLE SDK"
+    "NFC SDK",
+    "Stripe API",
+    "i18n",
+    "Opera Cloud PMS"
   ],
   "features": [
-    "실시간 객실 조회 및 자체 예약·결제",
-    "모바일 체크인/체크아웃 (프런트 무인화)",
-    "BLE 디지털 키 (도어락 연동)",
-    "인앱 룸서비스·컨시어지 요청"
+    "다국어 실시간 객실 조회 및 글로벌 예약·결제 (40+ 통화)",
+    "모바일 체크인/체크아웃 (5개 언어 지원)",
+    "NFC 디지털 키 (전 지점 도어락 연동)",
+    "인앱 룸서비스·컨시어지 요청 (다국어 자동 번역)"
   ],
   "results": [
     {
-      "value": "OTA 의존 62%→35%",
+      "value": "OTA 의존 71%→38%",
       "label": "자체 예약 비중 확대"
     },
     {
-      "value": "체크인 대기 8분→0분",
+      "value": "체크인 대기 12분→0분",
       "label": "모바일 체크인 이용 시"
     },
     {
-      "value": "투숙객 만족도 4.7/5.0",
-      "label": "앱 이용 고객 기준"
+      "value": "글로벌 리뷰 4.8/5.0",
+      "label": "App Store·Google Play 평균"
     }
   ],
   "highlights": [
     {
-      "title": "BLE 디지털 키",
-      "description": "기존 도어락 교체 없이 BLE 모듈 추가 방식으로 도입 비용 최소화"
+      "title": "NFC Digital Key",
+      "description": "23개 지점 전체에 NFC 모듈을 적용하여 비접촉 입실 구현, 도어락 교체 없이 기존 하드웨어에 모듈 추가 방식으로 도입 비용 최소화"
     },
     {
-      "title": "PMS 연동",
-      "description": "기존 호텔 관리 시스템과 양방향 API 연동, 객실 상태·요금 실시간 동기화"
+      "title": "Multi-Currency & Multi-Language",
+      "description": "Stripe 연동으로 40개국 이상 통화 결제 지원, 5개 언어 자동 전환으로 글로벌 투숙객 편의성 극대화"
     }
   ],
   "liveUrl": null,
   "githubUrl": null,
   "seo": {
-    "title": "호텔 객실 예약 앱 개발 - DUZZ",
-    "description": "호텔 자체 예약·모바일 체크인·디지털 키 앱 개발 사례",
-    "keywords": "호텔앱, 모바일체크인, ReactNative"
+    "title": "StayEase Hotel Booking App 개발 - DUZZ",
+    "description": "글로벌 부티크 호텔 체인 예약·모바일 체크인·디지털 키 앱 개발 사례",
+    "keywords": "호텔앱, 글로벌예약, ReactNative, NFC, StayEase"
   }
 }

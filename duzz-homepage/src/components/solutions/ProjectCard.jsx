@@ -32,12 +32,12 @@ export default function ProjectCard({ project, variant = 'full' }) {
   return (
     <Link to={`/solutions/${slug}`} className="group block bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
       {/* 썸네일 영역 */}
-      <div className={`relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br ${categoryGradient[category] || 'from-gray-900 to-gray-800'}`}>
+      <div className="relative w-full aspect-[16/10] overflow-hidden bg-[#F7F3FB]">
         {thumbnail ? (
           <img
             src={thumbnail}
             alt={title}
-            className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
             onError={(e) => { e.target.style.display = 'none' }}
           />
         ) : (
