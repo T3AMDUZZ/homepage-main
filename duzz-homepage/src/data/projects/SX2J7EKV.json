@@ -8,11 +8,11 @@
   "year": "2024",
   "period": "2024.05 - 2024.09",
   "role": "시스템 설계 & 개발",
-  "thumbnail": "/projects/SX2J7EKV/thumbnail.svg",
+  "thumbnail": "/projects/SX2J7EKV/thumbnail.webp",
   "images": [
-    "/projects/SX2J7EKV/thumbnail.svg",
-    "/projects/SX2J7EKV/01.svg",
-    "/projects/SX2J7EKV/02.svg"
+    "/projects/SX2J7EKV/thumbnail.webp",
+    "/projects/SX2J7EKV/01.webp",
+    "/projects/SX2J7EKV/02.webp"
   ],
   "summary": "중소 건설사의 다현장 공정·자재·인력 통합 관리 시스템",
   "challenge": "동시 진행 현장 5개를 카톡 단체방과 엑셀로 관리하던 건설사에서, 자재 발주 누락으로 인한 공정 지연과 본사의 현장별 진행률 파악 불가가 반복되고 있었습니다.",

@@ -8,11 +8,11 @@
   "year": "2023",
   "period": "2023.08 - 2023.12",
   "role": "프론트엔드 개발",
-  "thumbnail": "/projects/T9RJ6VHS/thumbnail.svg",
+  "thumbnail": "/projects/T9RJ6VHS/thumbnail.webp",
   "images": [
-    "/projects/T9RJ6VHS/thumbnail.svg",
-    "/projects/T9RJ6VHS/01.svg",
-    "/projects/T9RJ6VHS/02.svg"
+    "/projects/T9RJ6VHS/thumbnail.webp",
+    "/projects/T9RJ6VHS/01.webp",
+    "/projects/T9RJ6VHS/02.webp"
   ],
   "summary": "제주·강원 특화 펜션·액티비티 통합 예약 플랫폼",
   "challenge": "제주·강원 지역 소형 펜션과 액티비티 업체들이 네이버·여기어때 수수료 부담을 줄이기 위해, 자체 예약 플랫폼을 만들고자 했습니다. 숙소와 액티비티를 묶어서 패키지로 판매하는 기능이 핵심이었습니다.",

@@ -8,11 +8,11 @@
   "year": "2023",
   "period": "2023.06 - 2023.10",
   "role": "풀스택 개발",
-  "thumbnail": "/projects/PL8A1NKR/thumbnail.svg",
+  "thumbnail": "/projects/PL8A1NKR/thumbnail.webp",
   "images": [
-    "/projects/PL8A1NKR/thumbnail.svg",
-    "/projects/PL8A1NKR/01.svg",
-    "/projects/PL8A1NKR/02.svg"
+    "/projects/PL8A1NKR/thumbnail.webp",
+    "/projects/PL8A1NKR/01.webp",
+    "/projects/PL8A1NKR/02.webp"
   ],
   "summary": "피부과·성형외과 체인 대상 예약·접수 통합 관리 시스템",
   "challenge": "3개 지점을 운영하는 피부과에서 전화 예약 관리가 한계에 달했습니다. 지점 간 예약이 공유되지 않아 이중 예약이 발생하고, 시술 후 재방문 안내를 수동으로 보내는 인력 부담이 있었습니다.",

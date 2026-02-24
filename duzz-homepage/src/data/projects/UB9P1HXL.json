@@ -8,11 +8,11 @@
   "year": "2023",
   "period": "2023.07 - 2023.11",
   "role": "풀스택 개발",
-  "thumbnail": "/projects/UB9P1HXL/thumbnail.svg",
+  "thumbnail": "/projects/UB9P1HXL/thumbnail.webp",
   "images": [
-    "/projects/UB9P1HXL/thumbnail.svg",
-    "/projects/UB9P1HXL/01.svg",
-    "/projects/UB9P1HXL/02.svg"
+    "/projects/UB9P1HXL/thumbnail.webp",
+    "/projects/UB9P1HXL/01.webp",
+    "/projects/UB9P1HXL/02.webp"
   ],
   "summary": "필라테스·PT 전문 센터 3개 지점의 회원·수업·정산 통합 관리 앱",
   "challenge": "강남·판교에 3개 지점을 운영하는 필라테스 센터에서, 회원 350명의 수업 예약을 카카오톡 단톡방으로 받고 있었습니다. 노쇼가 발생해도 대기자 연락이 늦어 빈 슬롯이 낭비되었고, 강사별 정산은 월말마다 엑셀로 수작업하면서 오류가 반복되었습니다.",
