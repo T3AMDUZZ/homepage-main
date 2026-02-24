@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { MessageSquare, FileText, Palette, Code, CheckCircle, Rocket, Eye, Clock, Building2, Users, Calendar, BarChart3 } from 'lucide-react'
+import usePageMeta from '../hooks/usePageMeta'
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -30,6 +31,11 @@ const methodology = [
 ]
 
 export default function Process() {
+  usePageMeta({
+    title: '개발 프로세스 - DUZZ | 체계적이고 투명한 개발',
+    description: '상담부터 배포·유지보수까지, DUZZ의 6단계 개발 프로세스와 애자일 방법론을 확인하세요.',
+  })
+
   return (
     <>
       {/* Header */}

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Code, Server, Shield, MessageSquare, CreditCard, Cloud, Lightbulb, Check, ArrowRight } from 'lucide-react'
+import usePageMeta from '../hooks/usePageMeta'
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -30,13 +31,18 @@ const mainServices = [
 ]
 
 const additionalServices = [
-  { icon: MessageSquare, title: '알림톡 연동', desc: '카카오 알림톡 등 메시징 서비스를 시스템에 연동합니다.' },
-  { icon: CreditCard, title: '결제 연동', desc: 'PG사 결제 모듈을 웹/앱 서비스에 통합합니다.' },
-  { icon: Cloud, title: '클라우드 인프라', desc: 'AWS, NCP 등 클라우드 환경 구축 및 관리를 지원합니다.' },
+  { icon: MessageSquare, title: '메시징 연동', desc: 'WhatsApp, LINE, 알림톡 등 글로벌 메시징 서비스를 시스템에 연동합니다.' },
+  { icon: CreditCard, title: '결제 연동', desc: 'Stripe, PayPal, 토스페이먼츠 등 글로벌·국내 결제를 통합합니다.' },
+  { icon: Cloud, title: '클라우드 인프라', desc: 'AWS, GCP 등 클라우드 환경 구축 및 관리를 지원합니다.' },
   { icon: Lightbulb, title: '기술 컨설팅', desc: '프로젝트 기획부터 기술 스택 선정까지 컨설팅합니다.' },
 ]
 
 export default function Services() {
+  usePageMeta({
+    title: '서비스 - DUZZ | 홈페이지 개발, 시스템 구축, 유지보수',
+    description: 'DUZZ의 전문 IT 서비스. 홈페이지 개발, 업무 시스템 구축, 유지보수, 메시징·결제 연동까지.',
+  })
+
   return (
     <>
       {/* Header */}

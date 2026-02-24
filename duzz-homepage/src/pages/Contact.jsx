@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { Mail, Phone, ExternalLink, ChevronDown, Send, CheckCircle, Clock, Building2 } from 'lucide-react'
+import usePageMeta from '../hooks/usePageMeta'
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -39,7 +40,7 @@ const faqCategories = [
       },
       {
         q: '개발 진행 상황을 어떻게 확인하나요?',
-        a: 'duzztest.com을 통해 개발 중인 화면을 실시간으로 확인하실 수 있습니다. 이 외에도 주 1회 정기 미팅(화상 또는 대면)을 통해 진행 현황을 보고드리며, 카카오톡/슬랙을 통해 수시 소통이 가능합니다. 피드백은 즉시 반영됩니다.',
+        a: 'duzztest.com을 통해 개발 중인 화면을 실시간으로 확인하실 수 있습니다. 이 외에도 주 1회 정기 미팅(화상 또는 대면)을 통해 진행 현황을 보고드리며, Slack/Teams 등을 통해 수시 소통이 가능합니다. 피드백은 즉시 반영됩니다.',
       },
       {
         q: '개발 중에 기획이 변경되면 어떻게 하나요?',
@@ -60,7 +61,7 @@ const faqCategories = [
       },
       {
         q: '호스팅/서버 관리도 해주시나요?',
-        a: '네, AWS·Vercel·카페24 등 프로젝트에 적합한 호스팅 환경을 세팅해드립니다. 서버 관리를 맡기시면 모니터링·장애 대응·보안 업데이트를 포함한 월별 관리 서비스를 제공합니다. 직접 관리하시길 원할 경우 인수인계 문서를 함께 전달드립니다.',
+        a: '네, AWS·GCP·Vercel 등 프로젝트에 적합한 호스팅 환경을 세팅해드립니다. 서버 관리를 맡기시면 모니터링·장애 대응·보안 업데이트를 포함한 월별 관리 서비스를 제공합니다. 직접 관리하시길 원할 경우 인수인계 문서를 함께 전달드립니다.',
       },
     ],
   },
@@ -86,6 +87,11 @@ const faqCategories = [
 const CONTACT_API_URL = import.meta.env.VITE_CONTACT_API_URL
 
 export default function Contact() {
+  usePageMeta({
+    title: '문의하기 - DUZZ | 프로젝트 무료 상담',
+    description: '프로젝트 상담부터 견적까지, 24시간 내 1차 응답을 보장합니다. DUZZ에 문의하세요.',
+  })
+
   const [submitted, setSubmitted] = useState(false)
   const [sending, setSending] = useState(false)
   const [sendError, setSendError] = useState(false)

@@ -5,6 +5,7 @@ import { ArrowRight, Quote, Briefcase, Users, ThumbsUp, FolderOpen } from 'lucid
 import { categories, getProjectsByCategory } from '../data/projects'
 import ProjectCard from '../components/solutions/ProjectCard'
 import ProjectFilter from '../components/solutions/ProjectFilter'
+import usePageMeta from '../hooks/usePageMeta'
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -18,8 +19,8 @@ const testimonials = [
     name: '김대표', company: '(주)이첸이엔씨',
   },
   {
-    quote: '체계적인 프로세스와 꼼꼼한 개발 덕분에 기대 이상의 결과물을 받을 수 있었습니다. 유지보수 대응도 빨라서 안심하고 맡길 수 있었습니다.',
-    name: '이매니저', company: 'TurnUp',
+    quote: '해외 프로젝트임에도 시차에 구애받지 않고 빠르게 소통해주셨고, 현지 사정을 반영한 세심한 기획이 인상적이었습니다.',
+    name: 'David K.', company: '글로벌 F&B 기업',
   },
 ]
 
@@ -31,6 +32,11 @@ const trustStats = [
 ]
 
 export default function Solutions() {
+  usePageMeta({
+    title: '포트폴리오 - DUZZ | 국내외 프로젝트 사례',
+    description: '두바이, 도쿄, 싱가포르, 런던 등 국내외 다양한 업종의 프로젝트 성공 사례를 확인하세요.',
+  })
+
   const [activeFilter, setActiveFilter] = useState('all')
 
   const filteredProjects = getProjectsByCategory(activeFilter)
@@ -47,7 +53,7 @@ export default function Solutions() {
             className="text-3xl md:text-5xl font-bold mb-4">다양한 업종의 성공 사례</motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
             className="text-white/40 max-w-2xl mx-auto">
-            식품, 건설, 의료, 물류 등 다양한 업종의 프로젝트 경험으로 귀사의 비즈니스를 이해하고 최적의 솔루션을 제안합니다.
+            국내외 다양한 업종의 프로젝트 경험으로 귀사의 비즈니스를 이해하고 최적의 솔루션을 제안합니다.
           </motion.p>
         </div>
         <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-[0]">
@@ -106,7 +112,7 @@ export default function Solutions() {
             <h2 className="text-2xl font-bold text-primary">협력 기업</h2>
           </motion.div>
           <div className="flex flex-wrap justify-center gap-6">
-            {['블루모션', '(주)이첸이엔씨', 'TurnUp'].map((name, i) => (
+            {['블루모션', '(주)이첸이엔씨'].map((name, i) => (
               <motion.div key={name} {...fadeUp} transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="w-44 h-20 bg-white border border-gray-100 rounded-xl flex items-center justify-center"
               >

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Monitor, Server, Shield, ArrowRight, Eye, Users, Building2, Briefcase, CircleDot } from 'lucide-react'
 import { getFeaturedProjects } from '../data/projects'
 import ProjectCard from '../components/solutions/ProjectCard'
+import usePageMeta from '../hooks/usePageMeta'
 
 function WaveShape({ className = '', fill = '#ffffff', flip = false }) {
   return (
@@ -45,10 +46,10 @@ const whyDuzz = [
 
 /* ── Hero 우측: 프로젝트 보드 ── */
 const heroProjects = [
-  { client: 'K뷰티 브랜드', title: '자사몰 리뉴얼', status: '개발중', progress: 72 },
-  { client: '서울 정형외과', title: '병원 홈페이지 개발', status: '접수중', progress: 0 },
-  { client: '물류 스타트업', title: '재고관리 시스템', status: '개발중', progress: 45 },
-  { client: '프랜차이즈 본사', title: '가맹점 관리 앱', status: '검수중', progress: 95 },
+  { client: '글로벌 뷰티 브랜드', title: 'D2C 커머스 플랫폼', status: '개발중', progress: 72 },
+  { client: '도쿄 클리닉 체인', title: '예약 관리 시스템', status: '접수중', progress: 0 },
+  { client: '싱가포르 물류사', title: '크로스보더 대시보드', status: '개발중', progress: 45 },
+  { client: '두바이 건설사', title: '프로젝트 관리 시스템', status: '검수중', progress: 95 },
 ]
 
 const statusStyle = {
@@ -163,6 +164,8 @@ function HeroVisual() {
 }
 
 export default function Home() {
+  usePageMeta()
+
   return (
     <>
       {/* Hero */}
@@ -240,7 +243,7 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8">
           <p className="text-xs text-center text-accent/50 tracking-wider mb-8">함께한 기업</p>
           <div className="flex flex-wrap items-center justify-center gap-x-14 gap-y-6">
-            {['블루모션', '(주)이첸이엔씨', 'TurnUp'].map((name) => (
+            {['블루모션', '(주)이첸이엔씨'].map((name) => (
               <span key={name} className="text-lg md:text-xl font-bold text-gray-300 hover:text-gray-500 transition-colors">
                 {name}
               </span>
