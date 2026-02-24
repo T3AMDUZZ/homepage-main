@@ -3,6 +3,103 @@ import { motion } from 'framer-motion'
 import { Code, Server, Shield, MessageSquare, CreditCard, Cloud, Lightbulb, Check, ArrowRight } from 'lucide-react'
 import usePageMeta from '../hooks/usePageMeta'
 
+/* ── Service Visual Mockups ── */
+function BrowserMockup() {
+  return (
+    <div className="w-full max-w-xs mx-auto">
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+        <div className="flex items-center gap-2 px-3 py-2.5 border-b border-gray-100">
+          <div className="flex gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-red-300" />
+            <span className="w-2 h-2 rounded-full bg-yellow-300" />
+            <span className="w-2 h-2 rounded-full bg-green-300" />
+          </div>
+          <div className="flex-1 px-2 py-0.5 bg-gray-50 rounded text-[9px] text-gray-300 text-center">yourcompany.com</div>
+        </div>
+        <div className="p-4 space-y-2.5">
+          <div className="h-2 bg-primary/8 rounded-full w-2/3" />
+          <div className="h-1.5 bg-gray-100 rounded-full w-full" />
+          <div className="h-1.5 bg-gray-100 rounded-full w-4/5" />
+          <div className="grid grid-cols-3 gap-1.5 mt-3">
+            <div className="h-12 bg-highlight/5 rounded-md" />
+            <div className="h-12 bg-highlight/5 rounded-md" />
+            <div className="h-12 bg-highlight/5 rounded-md" />
+          </div>
+          <div className="h-6 bg-highlight/10 rounded-md w-1/3 mt-2" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function TerminalMockup() {
+  return (
+    <div className="w-full max-w-xs mx-auto">
+      <div className="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-sm">
+        <div className="flex items-center gap-2 px-3 py-2.5 border-b border-white/5">
+          <div className="flex gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-red-400/70" />
+            <span className="w-2 h-2 rounded-full bg-yellow-400/70" />
+            <span className="w-2 h-2 rounded-full bg-green-400/70" />
+          </div>
+          <span className="text-[9px] text-white/20 ml-1">api-server</span>
+        </div>
+        <div className="p-4 font-mono text-[10px] space-y-1.5">
+          <p><span className="text-green-400/60">$</span> <span className="text-white/40">npm run start:prod</span></p>
+          <p className="text-white/20">Server running on port 3000</p>
+          <p className="text-white/20">Database connected ✓</p>
+          <p className="text-white/20">Redis cache initialized ✓</p>
+          <p className="mt-2"><span className="text-blue-400/60">GET</span> <span className="text-white/30">/api/v1/users</span> <span className="text-green-400/50">200</span> <span className="text-white/15">12ms</span></p>
+          <p><span className="text-yellow-400/60">POST</span> <span className="text-white/30">/api/v1/orders</span> <span className="text-green-400/50">201</span> <span className="text-white/15">45ms</span></p>
+          <p><span className="text-blue-400/60">GET</span> <span className="text-white/30">/api/v1/dashboard</span> <span className="text-green-400/50">200</span> <span className="text-white/15">8ms</span></p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function DashboardMockup() {
+  return (
+    <div className="w-full max-w-xs mx-auto">
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+        <div className="flex items-center justify-between px-3 py-2.5 border-b border-gray-100">
+          <span className="text-[9px] font-semibold text-primary/40">모니터링 대시보드</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+        </div>
+        <div className="p-3 space-y-2.5">
+          <div className="grid grid-cols-3 gap-2">
+            <div className="p-2 bg-green-50 rounded-lg text-center">
+              <p className="text-[9px] text-green-600/50">가동률</p>
+              <p className="text-sm font-bold text-green-600/70">99.9%</p>
+            </div>
+            <div className="p-2 bg-blue-50 rounded-lg text-center">
+              <p className="text-[9px] text-blue-600/50">응답시간</p>
+              <p className="text-sm font-bold text-blue-600/70">42ms</p>
+            </div>
+            <div className="p-2 bg-purple-50 rounded-lg text-center">
+              <p className="text-[9px] text-purple-600/50">요청수</p>
+              <p className="text-sm font-bold text-purple-600/70">1.2K</p>
+            </div>
+          </div>
+          <div className="h-16 flex items-end gap-1 px-1">
+            {[40, 65, 45, 80, 55, 70, 90, 60, 75, 85, 50, 95].map((h, i) => (
+              <div key={i} className="flex-1 bg-highlight/15 rounded-t-sm" style={{ height: `${h}%` }} />
+            ))}
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="flex-1 h-1.5 bg-green-100 rounded-full overflow-hidden">
+              <span className="block h-full bg-green-400/50 rounded-full" style={{ width: '99.9%' }} />
+            </span>
+            <span className="text-[8px] text-green-600/50">정상</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const serviceVisuals = [BrowserMockup, TerminalMockup, DashboardMockup]
+
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
@@ -96,8 +193,8 @@ export default function Services() {
                   ))}
                 </div>
               </div>
-              <div className={`${i % 2 === 1 ? 'md:order-1' : ''} h-64 md:h-80 bg-secondary rounded-2xl flex items-center justify-center border border-gray-100`}>
-                <s.icon size={64} className="text-primary/5" strokeWidth={1} />
+              <div className={`${i % 2 === 1 ? 'md:order-1' : ''} h-64 md:h-80 bg-secondary rounded-2xl flex items-center justify-center border border-gray-100 p-6`}>
+                {(() => { const Visual = serviceVisuals[i]; return <Visual /> })()}
               </div>
             </motion.div>
           ))}

@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Mail, Phone, ExternalLink, Send } from 'lucide-react'
+import { Mail, Phone, ExternalLink } from 'lucide-react'
 import { FaFacebookF, FaInstagram } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SiNaver } from 'react-icons/si'
@@ -21,17 +20,6 @@ const serviceLinks = [
 ]
 
 export default function Footer() {
-  const [email, setEmail] = useState('')
-  const [subscribed, setSubscribed] = useState(false)
-
-  const handleSubscribe = (e) => {
-    e.preventDefault()
-    if (email) {
-      setSubscribed(true)
-      setEmail('')
-    }
-  }
-
   return (
     <footer className="bg-primary text-white relative overflow-hidden">
       {/* Wave Divider */}
@@ -44,7 +32,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8 pt-28 pb-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold mb-4">DUZZ</h3>
@@ -120,32 +108,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-semibold mb-5 text-white/70 text-xs uppercase tracking-wider">뉴스레터</h4>
-            <p className="text-white/30 text-sm leading-relaxed mb-4">
-              최신 소식과 IT 트렌드를 받아보세요!
-            </p>
-            {subscribed ? (
-              <p className="text-highlight-light text-sm">구독해주셔서 감사합니다!</p>
-            ) : (
-              <form onSubmit={handleSubscribe} className="relative">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="이메일 주소 입력"
-                  className="w-full px-4 py-3 pr-12 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-white/20 focus:outline-none focus:border-white/20 transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="absolute right-1.5 top-1/2 -translate-y-1/2 w-8 h-8 bg-highlight rounded-md flex items-center justify-center hover:bg-highlight-light transition-colors"
-                >
-                  <Send size={13} className="text-white" />
-                </button>
-              </form>
-            )}
-          </div>
         </div>
 
         {/* Bottom */}
