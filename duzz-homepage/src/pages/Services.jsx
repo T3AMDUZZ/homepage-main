@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Code, Server, Shield, MessageSquare, CreditCard, Cloud, Lightbulb, Check, ArrowRight } from 'lucide-react'
+import { Code, Server, Shield, MessageSquare, CreditCard, Cloud, Lightbulb, Check, ArrowRight, Wrench, AlertTriangle, Activity, FileBarChart, Settings, ClipboardList } from 'lucide-react'
 import usePageMeta from '../hooks/usePageMeta'
 
 /* ── Service Visual Mockups ── */
@@ -218,6 +218,39 @@ export default function Services() {
                 </div>
                 <h3 className="font-bold text-primary mb-2">{s.title}</h3>
                 <p className="text-sm text-accent leading-relaxed">{s.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Maintenance SLA */}
+      <section className="py-24 bg-white">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8">
+          <motion.div {...fadeUp} transition={{ duration: 0.6 }} className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.2em] text-highlight font-semibold mb-3">Maintenance</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">유지보수 정책</h2>
+            <p className="text-accent mt-4 max-w-2xl mx-auto">
+              개발 완료 후에도 안정적인 서비스 운영을 위해 체계적인 유지보수 정책을 운영합니다.
+            </p>
+          </motion.div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: Wrench, title: '무상 보수', desc: '배포 후 1개월간 버그 수정을 무상으로 제공합니다. 안정적인 서비스 안착을 지원합니다.' },
+              { icon: AlertTriangle, title: '긴급 대응', desc: '서비스 장애 발생 시 4시간 내 1차 대응을 보장합니다. 비즈니스 영향을 최소화합니다.' },
+              { icon: Activity, title: '정기 점검', desc: '월 1회 서버 상태, 보안 취약점, 성능 지표를 점검하여 사전에 문제를 예방합니다.' },
+              { icon: Settings, title: '기능 업데이트', desc: '별도 협의를 통해 신규 기능 추가 및 기존 기능 개선을 진행합니다.' },
+              { icon: ClipboardList, title: '모니터링', desc: '서버 가동률 99.9%를 목표로 24시간 모니터링 체계를 운영합니다.' },
+              { icon: FileBarChart, title: '월간 리포트', desc: '유지보수 내역, 서버 상태, 성능 지표를 포함한 월간 리포트를 제공합니다.' },
+            ].map((item, i) => (
+              <motion.div key={item.title} {...fadeUp} transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="p-7 bg-secondary rounded-2xl border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all"
+              >
+                <div className="w-11 h-11 bg-highlight/10 rounded-xl flex items-center justify-center mb-4">
+                  <item.icon size={20} className="text-highlight" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-bold text-primary mb-2">{item.title}</h3>
+                <p className="text-sm text-accent leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>

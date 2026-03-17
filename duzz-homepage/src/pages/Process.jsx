@@ -19,9 +19,9 @@ const steps = [
 ]
 
 const strengths = [
-  { icon: Eye, title: '실시간 작업 현황 공유', desc: 'duzztest.com을 통한 투명한 프로세스로 개발 진행 상황을 언제든 확인할 수 있습니다.' },
+  { icon: Eye, title: '실시간 작업 현황 공유', desc: '프로젝트별 전용 서브도메인(예: project.duzztest.com)을 제공합니다. 별도 설치 없이 브라우저에서 개발 중인 결과물을 실시간으로 확인할 수 있습니다.' },
   { icon: Clock, title: '빠른 초기 응답', desc: '24시간 내 1차 응답을 보장하여 프로젝트 진행에 지연이 없도록 합니다.' },
-  { icon: Building2, title: '(주)북극여우의 안정성', desc: '법인 소속 개발팀으로서 안정적이고 지속 가능한 서비스를 보장합니다.' },
+  { icon: Building2, title: '(주)북극여우의 안정성', desc: 'DUZZ는 (주)북극여우 소속 전문 개발팀입니다. 법인 기반의 체계적인 계약과 안정적인 장기 운영을 보장합니다.' },
 ]
 
 const methodology = [

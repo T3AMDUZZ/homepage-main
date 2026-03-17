@@ -1,0 +1,60 @@
+{
+  "id": "DM7X3KQV",
+  "slug": "DM7X3KQV",
+  "title": "Del Monte 프로모션 웹게임 개발",
+  "client": "WithYouCompany",
+  "industry": "식품/FMCG",
+  "category": "web",
+  "year": "2026",
+  "period": "2026.01 - 현재 (유지보수)",
+  "role": "풀스택 개발 & 유지보수",
+  "thumbnail": "/projects/DM7X3KQV/thumbnail.webp",
+  "images": [
+    "/projects/DM7X3KQV/thumbnail.webp",
+    "/projects/DM7X3KQV/01.webp",
+    "/projects/DM7X3KQV/02.webp"
+  ],
+  "summary": "광고대행사 WithYouCompany 의뢰로 Del Monte 브랜드 프로모션을 위한 웹 게임 개발",
+  "challenge": "Del Monte 브랜드 프로모션 캠페인의 일환으로 소비자 참여를 극대화할 인터랙티브 웹 게임이 필요했습니다. 실시간 랭킹과 친구 초대 등 바이럴 요소를 통해 자발적 확산을 이끌어야 했습니다.",
+  "description": "Del Monte 프로모션 캠페인을 위한 모바일 최적화 웹 게임을 개발했습니다. 실시간 랭킹 시스템으로 경쟁 요소를 부여하고, 친구 초대 기능으로 바이럴 확산을 유도하는 구조를 설계했습니다. 현재 첫 시즌 오픈을 앞두고 유지보수 및 안정화 작업을 진행하고 있습니다.",
+  "techStack": [
+    "React",
+    "JavaScript",
+    "Supabase",
+    "Tailwind CSS",
+    "Vercel"
+  ],
+  "features": [
+    "모바일 최적화 인터랙티브 웹 게임",
+    "실시간 랭킹 시스템 구축",
+    "친구 초대 및 SNS 공유 기능",
+    "이벤트 참여 트래픽 대응 구조 설계"
+  ],
+  "results": [
+    {
+      "value": "실시간 랭킹",
+      "label": "실시간 점수 집계 및 경쟁 시스템 도입"
+    },
+    {
+      "value": "소셜 바이럴",
+      "label": "친구 초대 및 SNS 공유 기능 구현"
+    },
+    {
+      "value": "60fps 게임 환경",
+      "label": "모바일 최적화로 끊김 없는 웹 게임 구현"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "실시간 랭킹 시스템",
+      "description": "실시간 점수 집계 및 TOP 10 랭킹 보드 구현으로 유저 간 경쟁 유도"
+    }
+  ],
+  "liveUrl": null,
+  "githubUrl": null,
+  "seo": {
+    "title": "Del Monte 프로모션 웹게임 - DUZZ",
+    "description": "Del Monte 브랜드 프로모션 웹 게임 개발 사례. 실시간 랭킹, 친구 초대, 소셜 바이럴.",
+    "keywords": "웹게임, 프로모션, Del Monte, 실시간랭킹, 이벤트개발"
+  }
+}

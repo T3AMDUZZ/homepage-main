@@ -14,7 +14,15 @@
       "Bash(git push:*)",
       "Bash(cd:*)",
       "Bash(dir:*)",
-      "Bash(gh run:*)"
+      "Bash(gh run:*)",
+      "WebFetch(domain:teamduzz.com)",
+      "Bash(echo gh not installed:*)",
+      "Bash(find \"/c/Users/alstj/OneDrive/문서/바탕 화면/homepage-ver3/duzz-homepage/public/projects\" -type f -name \"*.svg\" -exec ls -lh {} ;)",
+      "Bash(sort:*)",
+      "Bash(grep:*)",
+      "Bash(CI=true node:*)",
+      "Bash(rm:*)",
+      "Bash(head:*)"
     ]
   }
 }

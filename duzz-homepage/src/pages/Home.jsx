@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Monitor, Server, Shield, ArrowRight, Eye, Users, Building2, Briefcase, CircleDot } from 'lucide-react'
+import { Monitor, Server, Shield, ArrowRight, Eye, Users, Building2, Briefcase, CircleDot, Wrench, AlertTriangle, Activity, FileBarChart } from 'lucide-react'
 import { getFeaturedProjects } from '../data/projects'
 import ProjectCard from '../components/solutions/ProjectCard'
 import usePageMeta from '../hooks/usePageMeta'
@@ -39,9 +39,9 @@ const services = [
 const featuredProjects = getFeaturedProjects(3)
 
 const whyDuzz = [
-  { icon: Eye, title: '실시간 작업 현황 공유', desc: 'duzztest.com을 통해 개발 진행 상황을 실시간으로 확인할 수 있습니다.' },
+  { icon: Eye, title: '실시간 작업 현황 공유', desc: '프로젝트별 전용 서브도메인(예: project.duzztest.com)을 제공하여 개발 진행 상황을 실시간으로 확인할 수 있습니다.' },
   { icon: Users, title: '전담 매니저 배정', desc: '프로젝트 전담 매니저가 신속하고 정확한 커뮤니케이션을 보장합니다.' },
-  { icon: Building2, title: '(주)북극여우의 안정성', desc: '법인 소속 개발팀의 안정적이고 지속 가능한 서비스를 제공합니다.' },
+  { icon: Building2, title: '(주)북극여우의 안정성', desc: 'DUZZ는 (주)북극여우 소속 전문 개발팀입니다. 법인의 안정적인 운영 체계 아래 지속 가능한 서비스를 보장합니다.' },
 ]
 
 /* ── Hero 우측: 프로젝트 보드 ── */
@@ -326,8 +326,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Maintenance Policy */}
       <section className="py-24 bg-secondary">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8">
+          <motion.div {...fadeUp} transition={{ duration: 0.6 }} className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.2em] text-highlight font-semibold mb-3">Maintenance</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">유지보수 정책</h2>
+            <p className="text-accent mt-4 max-w-2xl mx-auto">개발 이후에도 안정적인 서비스 운영을 위해 체계적인 유지보수를 제공합니다.</p>
+          </motion.div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: Wrench, title: '무상 보수 기간', desc: '배포 후 1개월간 버그 수정을 무상으로 제공합니다.' },
+              { icon: AlertTriangle, title: '긴급 장애 대응', desc: '서비스 장애 발생 시 4시간 내 1차 대응을 보장합니다.' },
+              { icon: Activity, title: '정기 점검', desc: '월 1회 서버 상태 및 보안 정기 점검을 실시합니다.' },
+              { icon: FileBarChart, title: '유연한 플랜', desc: '프로젝트 규모에 맞는 맞춤 유지보수 플랜을 제공합니다.' },
+            ].map((item, i) => (
+              <motion.div key={item.title} {...fadeUp} transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="p-7 bg-white rounded-2xl border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all text-center"
+              >
+                <div className="w-12 h-12 bg-highlight/10 rounded-xl flex items-center justify-center mx-auto mb-5">
+                  <item.icon size={22} className="text-highlight" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-bold text-primary mb-2">{item.title}</h3>
+                <p className="text-sm text-accent leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+          <motion.div {...fadeUp} transition={{ duration: 0.5, delay: 0.4 }} className="text-center mt-10">
+            <Link to="/services" className="inline-flex items-center gap-2 text-sm font-medium text-highlight hover:text-highlight-light transition-colors">
+              유지보수 상세 보기 <ArrowRight size={14} />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8 text-center">
           <motion.div {...fadeUp} transition={{ duration: 0.6 }}>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
