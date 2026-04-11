@@ -7,7 +7,7 @@ import { SiNaver } from 'react-icons/si'
 const companyLinks = [
   { path: '/', label: '회사 소개' },
   { path: '/services', label: '서비스' },
-  { path: '/solutions', label: '포트폴리오' },
+  { path: '/solutions', label: '솔루션' },
   { path: '/process', label: '프로세스' },
   { path: '/contact', label: '문의하기' },
 ]
