@@ -26,7 +26,7 @@
 .hoho-page a     { text-decoration: none; color: inherit; }
 .hoho-page img   { display: block; }
 .hoho-page .container { width: min(1120px, 88vw); margin: auto; }
-.hoho-page .serif { font-family: 'Pretendard', system-ui, sans-serif; }
+.hoho-page .serif { font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif; }
 
 /* ── HERO ── */
 .hoho-page .hero {
@@ -82,12 +82,12 @@
   width: 44px; height: 44px;
   background: var(--gold);
   border-radius: 10px;
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 20px; font-weight: 700;
   color: #fff;
 }
 .hoho-page .brand-label { display: flex; flex-direction: column; }
-.hoho-page .brand-name { font-family: 'Pretendard', system-ui, sans-serif; font-size: 17px; font-weight: 700; line-height: 1.2; }
+.hoho-page .brand-name { font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif; font-size: 17px; font-weight: 700; line-height: 1.2; }
 .hoho-page .brand-sub  { font-size: 10px; letter-spacing: 3px; opacity: .65; }
 
 .hoho-page .nav-links { margin-left: auto; display: flex; gap: 30px; font-size: 13px; }
@@ -135,7 +135,7 @@
   margin: 0 0 22px;
 }
 .hoho-page .hero h1 {
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 56px; line-height: 1.14;
   font-weight: 700; letter-spacing: -1.2px;
   margin: 0 0 26px;
@@ -227,7 +227,7 @@
 }
 .hoho-page .kicker-lt { color: var(--gold-lt); }
 .hoho-page .s-head h2 {
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 44px; line-height: 1.14;
   letter-spacing: -.9px; margin: 0 0 18px;
 }
@@ -273,7 +273,7 @@
 .hoho-page .flow-cell:hover .flow-circle::before { opacity: .55; }
 @keyframes hoho-spin { to { transform: rotate(360deg); } }
 .hoho-page .flow-num {
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 30px; color: var(--gold); line-height: 1;
   margin-bottom: 10px;
 }
@@ -322,7 +322,7 @@
 .hoho-page .tag-navy { background: rgba(44,88,69,.07); color: var(--navy); }
 .hoho-page .tag-gold { background: var(--gold-soft); color: var(--gold); }
 .hoho-page .ex-title {
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 22px; font-weight: 700;
   margin: 12px 0 24px;
 }
@@ -399,7 +399,7 @@
   font-size: 13px; font-weight: 700;
   color: var(--gold-lt);
   flex-shrink: 0;
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   transition: background .3s, color .3s;
 }
 .hoho-page .proc-text { flex: 1; }
@@ -427,7 +427,7 @@
   margin-top: 0;
 }
 .hoho-page .safety-copy h2 {
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 40px; line-height: 1.2;
   letter-spacing: -.8px;
   margin: 14px 0 20px;
@@ -477,7 +477,7 @@
 .hoho-page .atty-card-body { padding: 18px; }
 .hoho-page .atty-card-role { font-size: 10px; letter-spacing: 3px; color: var(--gold-lt); margin: 0 0 4px; }
 .hoho-page .atty-card h3 {
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 19px; color: #dce8d8; margin: 0 0 4px;
 }
 .hoho-page .atty-card-sub { color: rgba(255,255,255,.5); font-size: 12px; margin: 0 0 12px; }
@@ -487,7 +487,7 @@
   padding: 4px 10px; font-size: 11px; color: var(--gold-lt);
 }
 .hoho-page .atty-info h2 {
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 34px; font-weight: 700;
   line-height: 1.28; margin: 0 0 20px;
 }
@@ -531,7 +531,7 @@
   display: grid; place-items: center;
   width: 44px; height: 44px;
   background: var(--gold); border-radius: 10px;
-  font-family: 'Pretendard', system-ui, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, sans-serif;
   font-size: 20px; font-weight: 700; color: #fff;
   margin: 0 auto 14px;
 }
