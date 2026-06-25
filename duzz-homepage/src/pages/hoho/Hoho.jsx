@@ -20,6 +20,34 @@ export default function Hoho() {
 
   const rootRef = useRef(null)
 
+  // Load the page-specific webfonts (제목: Pretendard / 본문: Noto Sans KR).
+  // These weren't in the React app's <head>, so without this the page fell
+  // back to system fonts. Removed on unmount so the DUZZ site is unaffected.
+  useEffect(() => {
+    const specs = [
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', cross: true },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css',
+        cross: true,
+      },
+    ]
+    const els = specs.map(({ rel, href, cross }) => {
+      const link = document.createElement('link')
+      link.rel = rel
+      link.href = href
+      if (cross) link.crossOrigin = 'anonymous'
+      document.head.appendChild(link)
+      return link
+    })
+    return () => els.forEach((el) => el.remove())
+  }, [])
+
   useEffect(() => {
     const root = rootRef.current
     if (!root) return
