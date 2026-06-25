@@ -92,16 +92,15 @@ export default function Hoho() {
     if (reduceMotion) {
       reveals.forEach((el) => el.classList.add('visible'))
     } else {
+      // In-and-out: fade/slide in when entering the viewport, and back out
+      // when it leaves — re-triggers every time you scroll past, both ways.
       const io = new IntersectionObserver(
         (entries) => {
           entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add('visible')
-              io.unobserve(e.target)
-            }
+            e.target.classList.toggle('visible', e.isIntersecting)
           })
         },
-        { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
+        { threshold: 0.12, rootMargin: '-8% 0px -12% 0px' }
       )
       reveals.forEach((el) => io.observe(el))
       cleanups.push(() => io.disconnect())
